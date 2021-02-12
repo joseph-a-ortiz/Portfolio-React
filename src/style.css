@@ -23,6 +23,12 @@ nav.navbar-b {
   }
 }
 
+p.lead {
+  margin-left: -3%;
+  margin-top: 3%;
+}
+
+
 
 body {
   background-color: #f1dd9c !important;
