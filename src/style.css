@@ -1576,7 +1576,7 @@ XS SCREENS
 XS SCREENS 
 */
 
-  @media screen and (min-width: 300px) and (max-width: 400px) {
+  @media screen and (min-width: 300px) and (max-width: 350px) {
     nav.navbar-b {
       width: 100%;
     
@@ -1773,6 +1773,211 @@ XS SCREENS
   animation-direction : alternate-reverse;
   -webkit-animation-direction : alternate-reverse;
   height: 100px;
+}
+
+}
+
+/*
+XS SCREENS 
+*/
+
+@media screen and (min-width: 350px) and (max-width: 400px) {
+  nav.navbar-b {
+    width: 100%;
+  
+  }
+  .title-left {
+    font-size: 2rem;
+    margin-left: 20%;
+    position:relative;
+  }
+  .title-left2 {
+    font-size: 2rem;
+    margin-left: 35%;
+    position:relative;
+  }
+
+  .back-to-top {
+    position: fixed;
+    display: none;
+    background: #0078ff;
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 26%;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 11;
+  }      
+
+  div.slides {
+    display: grid;
+    overflow: hidden;
+    margin-right: 0%;
+    margin-left: -105%;
+    margin-bottom: -35%;
+  }
+div.slides >  .slide {
+  grid-area: 1 / -10;
+ margin-left: 400px;
+ margin-top: 60px;
+ margin-bottom: 140px;
+
+}
+div.slides > button {
+  appearance: none;
+  background: transparent;
+  border: none;
+  color: white;
+  position: relative;
+  margin-right: 14px;
+  font-size: 5rem;
+  width: 5rem;
+  height: 5rem;
+  top: 30%;
+  transition: opacity 0.3s;
+  opacity: 0.8;
+  z-index: 3;
+}
+.slides > button:hover {
+  opacity: 1;
+}
+.slides > button:focus {
+  outline: none;
+}
+.slides > button:first-child {
+  left: -325%;
+  top: 26%;
+}
+.slides > button:last-child {
+  right: 170%;
+  top: 25%;
+}
+
+div.slideContent {
+width: 80vw;
+height: 55vw;
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+transition: transform .7s ease-in-out;
+opacity: .5;
+
+display: grid;
+align-content: center;
+
+
+transform-style: preserve-3d;
+transform: perspective(1000px) translateX(calc(100% * var(--offset)))
+  rotateY(calc(-45deg * var(--dir)));
+}
+
+.slideContentInner {
+  transform-style: preserve-3d;
+  transform: translateZ(2rem);
+  transition: opacity 0.3s linear;
+  text-shadow: 0 0.1rem 1rem #000;
+  opacity: 0;
+}
+.slideContentInner .slideSubtitle, .slideContentInner .slideTitle {
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: 0.2ch;
+  text-transform: uppercase;
+  margin-top: -100px;
+  color: #f1dd9c;
+}
+
+.slideContentInner .slideDescription {
+  margin: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.2ch;
+}
+.slideBackground {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  bottom: 0;
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.8s linear, transform 0.3s ease-in-out;
+  pointer-events: none;
+  margin-left: 90px;
+  margin-right: -90px;
+  transform: translateX(calc(10% * var(--dir)));
+}
+.slide[data-active] {
+  z-index: 1;
+  pointer-events: auto;
+}
+.slide[data-active] .slideBackground {
+  opacity: 0;
+  transform: none;
+}
+.slide[data-active] .slideContentInner {
+  opacity: 1;
+}
+.slide[data-active] .slideContent {
+  --x: calc(var(--px) - .5);
+  --y: calc(var(--py) - .5);
+  opacity: 1;
+  transform: perspective(1000px);
+}
+.slide[data-active] .slideContent:hover {
+  transition: none;
+  transform: perspective(1000px) rotateY(calc(var(--x) * 45deg)) rotateX(calc(var(--y) * -45deg));
+}
+.tossing {
+animation-name: tossing;
+-webkit-animation-name: tossing;
+height: 100px;
+margin-top: 0px;
+margin-left: 60px;
+-webkit-animation-duration: 1.5s;
+animation-iteration-count: infinite;
+-webkit-animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+animation-direction : alternate-reverse;
+-webkit-animation-direction : alternate-reverse;
+height: 300px;
+
+}
+
+.tossing2 {
+  animation-name: tossing;
+  -webkit-animation-name: tossing;
+  height: 100px;
+  margin-top: -135px;
+  margin-left: 250%;
+  -webkit-animation-duration: 1s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction : alternate-reverse;
+  -webkit-animation-direction : alternate-reverse;
+  height: 200px;
+}
+
+.tossing3 {
+animation-name: tossing;
+-webkit-animation-name: tossing;
+height: 100px;
+margin-top: 350px;
+margin-left: 360%;
+-webkit-animation-duration: .3s;
+animation-iteration-count: infinite;
+-webkit-animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+animation-direction : alternate-reverse;
+-webkit-animation-direction : alternate-reverse;
+height: 100px;
 }
 
 }
