@@ -1,53 +1,92 @@
 
 import React from "react";
-import "../index";
-import "./stars.scss";
-import '../style.css';
-//import stock
-import stock from "../img/image1.jpg";
-import stock1 from "../img/image2.jpg";
-import stock2 from "../img/image3.jpg";
-import stock3 from "../img/image4.jpg";
-import stock4 from "../img/image5.jpg";
-import stock5 from "../img/image6.jpg";
+
+
+
 
 
 class Portfolio extends React.Component {
   render() {
     return (
-      <section id="portfolio" className="portfolio-mf sect-pt4 route">
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-12">
-              <div className="title-box text-center">
-                <h3 className="title-a">Projects</h3>
-             
-                <div>
-                  
-        <div id="app" />
-       
-         
-            <a href="https://github.com/joseph-a-ortiz/Coffee-Shop-Site" class="btn btn-1">
-              <svg>
-                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
-              </svg>
-                Coffee Shop Site
-            </a>
-            <a href="https://github.com/joseph-a-ortiz/Dead-Mosquito-App" class="btn btn-1">
-              <svg>
-                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
-              </svg>
-                Mosquito App
-            </a>
-          </div>
 
 
-              </div>
-            </div>
-          </div>
-          </div>    
 
-      </section>
+<div class="carousel container" id="portfolio">
+  <div class="carousel__nav">
+   <span id="moveLeft" class="carousel__arrow">
+        <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+</svg>
+    </span>
+    <span id="moveRight" class="carousel__arrow" >
+      <svg class="carousel__icon"  width="24" height="24" viewBox="0 0 24 24">
+  <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+</svg>    
+    </span>
+  </div>
+  <div class="carousel-item carousel-item--1">
+
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+      <h2 class="carousel-item__subtitle">The grand moment </h2>
+      <h1 class="carousel-item__title">Le tour</h1>
+      <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <a href="#" class="carousel-item__btn">Explore the tour</a>
+        </div>
+    </div>
+  </div>
+  <div class="carousel-item carousel-item--2">
+
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+      <h2 class="carousel-item__subtitle">The big window </h2>
+      <h1 class="carousel-item__title">Minimal window</h1>
+      <p class="carousel-item__description">Clear Glass Window With Brown and White Wooden Frame iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+      <a href="#" class="carousel-item__btn">Read the article</a>
+        </div>
+    </div>
+  </div>
+    <div class="carousel-item carousel-item--3">
+
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+      <h2 class="carousel-item__subtitle">Tropical palms </h2>
+      <h1 class="carousel-item__title">Palms</h1>
+      <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <a href="#" class="carousel-item__btn">Explore the palms</a>
+        </div>
+    </div>
+  </div>
+  
+   <div class="carousel-item carousel-item--4">
+
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+      <h2 class="carousel-item__subtitle">Beach </h2>
+      <h1 class="carousel-item__title">The beach </h1>
+      <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <a href="#" class="carousel-item__btn">Explore the beach</a>
+        </div>
+    </div>
+  </div>
+  
+ <div class="carousel-item carousel-item--5">
+
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+      <h2 class="carousel-item__subtitle">The white building </h2>
+      <h1 class="carousel-item__title">White building</h1>
+      <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <a href="#" class="carousel-item__btn">Read the article</a>
+        </div>
+    </div>
+  </div>
+  
+</div>
+
+  
+
+ 
     );
   }
 }

@@ -20,7 +20,7 @@ class About extends React.Component {
           porcentage: "75%",
           value: "75"
         }, {
-          id: "ReactJS_skill",
+          id: "React_skill",
           content: "React",
           porcentage: "75%",
           value: "75"
@@ -34,8 +34,8 @@ class About extends React.Component {
         {
           id: "JSX_skill",
           content: "NodeJS, Express, MongoDB",
-          porcentage: "45%",
-          value: "45"
+          porcentage: "60%",
+          value: "60"
         },
       ],
       about_me: [

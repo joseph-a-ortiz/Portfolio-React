@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../img/cactus logo.png";
 import '../style.css';
+import "../index";
 
 class Contact extends React.Component {
   render() {
@@ -18,6 +19,8 @@ class Contact extends React.Component {
                         <h5 className="title-left2 ">Let's chat!</h5>
                         
                       </div>
+
+
                       <div>
                      
                         <div class="round" >
