@@ -53,7 +53,7 @@ document.getElementById('root'));
 
       var $w = $( window ).width();
 var $dW = $('.bb8').css('width');
-$dW = $dW.replace('px', '');
+
 $dW = parseInt($dW);
 var $dPos = 0;
 var $dSpeed = 1;

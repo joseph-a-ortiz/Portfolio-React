@@ -4,67 +4,128 @@ import Typed from "react-typed";
 import "../index";
 import logo from "../img/tumbleweed.png";
 import logo2 from "../img/pic.jpg";
- 
+import Particles from "react-tsparticles";
+import Intro1 from "./header";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
 class Intro extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.particlesInit = this.particlesInit.bind(this);
+    this.particlesLoaded = this.particlesLoaded.bind(this);
+  }
+
+  particlesInit(main) {
+    console.log(main);
+
+    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+  }
+
+  particlesLoaded(container) {
+    console.log(container);
+  }
   render() {
     return (
+      <Router >
 
-      <div id="home" className="intro route bg-image background">
-                  <img src={logo2}/>          
-
-                  <div class="bb8">
-                  <div className="table-cell">
-    
-    <h1 className="intro-title mb-4">Howdy, I am Joseph Ortiz</h1>
-    <p className="intro-subtitle">
-    
-      
-      <span className="text-slider-items"></span>
-      <strong className="text-slider">
-        <Typed
-          strings={[
-            "Front End Developer",
+      <Particles
+      id="particles-js"
+      init={this.particlesInit}
+      loaded={this.particlesLoaded}
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%"
+      }}
+      options={{
+        background: {
+          color: {
+            value: "#0d47a1",
+          },
           
-            "Software Engineer"
-          ]}
-          typeSpeed={80}
-          backDelay={1100}
-          backSpeed={30}
-          loop
-        />
-      </strong>
-    </p>
-    <p className="pt-3">
+        },
+        fpsLimit: 60,
+        interactivity: {
+          detectsOn: "canvas",
+          events: {
+            onClick: {
+              enable: true,
+              mode: "push",
+            },
+            onHover: {
+              enable: true,
+              mode: "repulse",
+            },
+            resize: true,
+          },
+          modes: {
+            bubble: {
+              distance: 400,
+              duration: 2,
+              opacity: 0.8,
+              size: 40,
+            },
+            push: {
+              quantity: 4,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+          },
+        },
+        particles: {
+          color: {
+            value: "#ffffff",
+          },
+          links: {
+            color: "#ffffff",
+            distance: 150,
+            enable: true,
+            opacity: 0.5,
+            width: 1,
+          },
+          collisions: {
+            enable: true,
+          },
+          move: {
+            direction: "none",
+            enable: true,
+            outMode: "bounce",
+            random: false,
+            speed: 3,
+            straight: false,
+          },
+          number: {
+            density: {
+              enable: true,
+              value_area: 1200,
+            },
+            value: 80,
+          },
+          opacity: {
+            value: 0.5,
+          },
+          shape: {
+            type: "circle",
+          },
+          size: {
+            random: true,
+            value: 5,
+          },
+        },
+        detectRetina: true,
+      }}
+    >
+    </Particles>
 
-<div class="sand"></div>
-
-
-
-    </p>
-    </div>
-
-     <div class="ball ">
-     <img class="ball" src={logo}/>
-
-     </div>
-     <div class="shadow"></div>
-     </div>
-        <div className="intro-content display-table">
-
-        </div>
-        
-        <header className="background h-100">
-   
-        <div className="sun" />
-        
-        <div className="sand">
-          <div className="mountains" />
-        </div>
+    <Intro1/>
       
-    </header>
-      </div>
+      </Router>
     );
   }
 }

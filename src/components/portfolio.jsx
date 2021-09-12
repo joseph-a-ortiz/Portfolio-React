@@ -1,7 +1,7 @@
 
 import React from "react";
-
-
+import "../style.css"
+import logo from "../img/earth.jpg";
 
 
 
@@ -10,8 +10,9 @@ class Portfolio extends React.Component {
     return (
 
 
-
+<section id="portfolio" className="portfolio-mf sect-pt4 route">
 <div class="carousel container" id="portfolio">
+  <div className="row">
   <div class="carousel__nav">
    <span id="moveLeft" class="carousel__arrow">
         <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
@@ -57,32 +58,8 @@ class Portfolio extends React.Component {
         </div>
     </div>
   </div>
-  
-   <div class="carousel-item carousel-item--4">
-
-    <div class="carousel-item__info">
-      <div class="carousel-item__container">
-      <h2 class="carousel-item__subtitle">Beach </h2>
-      <h1 class="carousel-item__title">The beach </h1>
-      <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-      <a href="#" class="carousel-item__btn">Explore the beach</a>
-        </div>
-    </div>
   </div>
-  
- <div class="carousel-item carousel-item--5">
-
-    <div class="carousel-item__info">
-      <div class="carousel-item__container">
-      <h2 class="carousel-item__subtitle">The white building </h2>
-      <h1 class="carousel-item__title">White building</h1>
-      <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-      <a href="#" class="carousel-item__btn">Read the article</a>
-        </div>
-    </div>
-  </div>
-  
-</div>
+</div></section>
 
   
 
