@@ -28,9 +28,11 @@ class Intro extends React.Component {
   }
   render() {
     return (
-      <Router >
 
+      <Router >   
+ <Intro1></Intro1>
       <Particles
+      
       id="particles-js"
       init={this.particlesInit}
       loaded={this.particlesLoaded}
@@ -44,11 +46,11 @@ class Intro extends React.Component {
       options={{
         background: {
           color: {
-            value: "#0d47a1",
+            value: "#87CEEB",
           },
           
         },
-        fpsLimit: 60,
+        fpsLimit: 70,
         interactivity: {
           detectsOn: "canvas",
           events: {
@@ -58,7 +60,7 @@ class Intro extends React.Component {
             },
             onHover: {
               enable: true,
-              mode: "repulse",
+              mode: ["bubble", "repulse"],
             },
             resize: true,
           },
@@ -70,7 +72,7 @@ class Intro extends React.Component {
               size: 40,
             },
             push: {
-              quantity: 4,
+              quantity: 3,
             },
             repulse: {
               distance: 200,
@@ -97,35 +99,43 @@ class Intro extends React.Component {
             enable: true,
             outMode: "bounce",
             random: false,
-            speed: 3,
+            speed: 1,
             straight: false,
           },
           number: {
             density: {
               enable: true,
-              value_area: 1200,
+              value_area: 2000,
             },
             value: 80,
           },
           opacity: {
-            value: 0.5,
+            value: 0.7,
           },
           shape: {
-            type: "circle",
+            type: "images",
+          image: [
+            {
+              src: 'https://render.logomakr.com/renders/34/LogoMakr-34gXE2.png',
+            }
+           
+          ]
+          
           },
           size: {
             random: true,
-            value: 5,
+            value: 14,
           },
         },
         detectRetina: true,
       }}
-    >
+    >      
     </Particles>
 
-    <Intro1/>
+
       
       </Router>
+      
     );
   }
 }
