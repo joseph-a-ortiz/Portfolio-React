@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://joseph-a-ortiz.github.io/Portfolio-Website/",
+  "homepage": "https://joseph-a-ortiz.github.io/Portfolio-React/",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
