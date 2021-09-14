@@ -38,7 +38,9 @@ class Intro1 extends React.Component {
               </div>
               <p className="pt-3">
               
-          <div class="sand"></div>
+          <div class="sand">
+          <div className="mountains" />
+          </div>
           <div class="bb8 container-intro">
      
           <div class="ball ">
@@ -59,7 +61,7 @@ class Intro1 extends React.Component {
         
         
         <div className="sand">
-          <div className="mountains" />
+          
         </div>
       
     </header>
