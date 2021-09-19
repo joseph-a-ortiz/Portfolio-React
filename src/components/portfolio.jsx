@@ -24,15 +24,14 @@ class Portfolio extends React.Component {
   <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
 </svg>    
     </span>
-  </div>
-  <div class="carousel-item carousel-item--1">
+  </div>    
+  <div class="carousel-item carousel-item--1 jjj">
 
-    <div class="carousel-item__info">
+  <div class="carousel-item__info">
       <div class="carousel-item__container">
-      <h2 class="carousel-item__subtitle">The grand moment </h2>
-      <h1 class="carousel-item__title">Le tour</h1>
-      <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-      <a href="#" class="carousel-item__btn">Explore the tour</a>
+      <h2 class="carousel-item__subtitle">React, MongoDB Project</h2><br/>
+      <h1 class="carousel-item__title">Merch Ecommerce Website</h1>
+     <a href="https://github.com/joseph-a-ortiz/React-Go" class="carousel-item__btn"> <br/>&#160;<i class="fa fa-github fa-4x"></i></a><a href="https://hwdychicken.herokuapp.com" class="carousel-item__btn">&#160;<i class="fa fa-desktop fa-4x"></i></a>
         </div>
     </div>
   </div>
@@ -40,10 +39,11 @@ class Portfolio extends React.Component {
 
     <div class="carousel-item__info">
       <div class="carousel-item__container">
-      <h2 class="carousel-item__subtitle">The big window </h2>
-      <h1 class="carousel-item__title">Minimal window</h1>
-      <p class="carousel-item__description">Clear Glass Window With Brown and White Wooden Frame iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-      <a href="#" class="carousel-item__btn">Read the article</a>
+      <h2 class="carousel-item__subtitle">Bootstrap Project</h2><br/>
+      <h1 class="carousel-item__title">Coffee Shop Website</h1>
+     <a href="https://github.com/joseph-a-ortiz/coffee-shop" class="carousel-item__btn"> <br/>&#160;<i class="fa fa-github fa-4x"></i></a><a href="https://joseph-a-ortiz.github.io/coffee-shop/" class="carousel-item__btn">&#160;<i class="fa fa-desktop fa-4x"></i></a>
+
+     
         </div>
     </div>
   </div>
@@ -51,10 +51,9 @@ class Portfolio extends React.Component {
 
     <div class="carousel-item__info">
       <div class="carousel-item__container">
-      <h2 class="carousel-item__subtitle">Tropical palms </h2>
-      <h1 class="carousel-item__title">Palms</h1>
-      <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-      <a href="#" class="carousel-item__btn">Explore the palms</a>
+      <h2 class="carousel-item__subtitle">React Native</h2><br/>
+      <h1 class="carousel-item__title"> Info App </h1>
+     <a href="https://github.com/joseph-a-ortiz/Dead-Mosquito-App" class="carousel-item__btn"> <br/>&#160;<i class="fa fa-github fa-4x"></i></a>
         </div>
     </div>
   </div>

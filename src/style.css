@@ -9,7 +9,10 @@ GENERAL STYLING
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
+.icon-title{
+  font-size: 2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 @media screen and (max-width: 600px) {
   div.container {
@@ -152,6 +155,10 @@ a:hover {
 .table-cell {
   display: table-cell;
   vertical-align: middle;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -161,10 +168,6 @@ a:hover {
   padding: 4rem 0;
 }
 
-.sect-pt4 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
 
 .sect-mt4 {
   margin-top: 4rem;
@@ -399,7 +402,7 @@ a:hover {
   line-height: 1;
   font-size: 16px;
   border-radius: 50%;
-  right: 15px;
+  right: 2%;
   bottom: 15px;
   transition: background 0.5s;
   z-index: 11;
@@ -1383,10 +1386,13 @@ position: relative;
 XS SCREENS 
 */
 
-    @media screen and (min-width: 200px) and (max-width: 300px)  {
+    @media screen and (max-width: 300px)  {
       nav.navbar-b {
         width: 100%;
       
+      }
+      div.container {
+        width: 100%;
       }
       .title-left {
         font-size: 2rem;
@@ -1410,7 +1416,7 @@ XS SCREENS
         line-height: 1;
         font-size: 16px;
         border-radius: 50%;
-        right: 26%;
+        right: 2%;
         bottom: 15px;
         transition: background 0.5s;
         z-index: 11;
@@ -1549,7 +1555,7 @@ XS SCREENS
     animation-direction : alternate-reverse;
     -webkit-animation-direction : alternate-reverse;
     height: 300px;
-  
+    display: none;
   }
     
     .tossing2 {
@@ -1557,7 +1563,7 @@ XS SCREENS
       -webkit-animation-name: tossing;
       height: 100px;
       margin-top: -135px;
-      margin-left: 150%;
+      margin-left: 70%;
       -webkit-animation-duration: 1s;
       animation-iteration-count: infinite;
       -webkit-animation-iteration-count: infinite;
@@ -1565,6 +1571,7 @@ XS SCREENS
       animation-direction : alternate-reverse;
       -webkit-animation-direction : alternate-reverse;
       height: 200px;
+      display: none;
   }
   
   .tossing3 {
@@ -1580,6 +1587,7 @@ XS SCREENS
     animation-direction : alternate-reverse;
     -webkit-animation-direction : alternate-reverse;
     height: 100px;
+    display: none;
   }
 
   }
@@ -1596,11 +1604,13 @@ XS SCREENS
       font-size: 2rem;
       margin-left: 20%;
       position:relative;
+
     }
     .title-left2 {
       font-size: 2rem;
       margin-left: 35%;
       position:relative;
+      z-index: 2;
     }
 
     .back-to-top {
@@ -1614,7 +1624,7 @@ XS SCREENS
       line-height: 1;
       font-size: 16px;
       border-radius: 50%;
-      right: 26%;
+      right: 2%;
       bottom: 15px;
       transition: background 0.5s;
       z-index: 11;
@@ -1761,7 +1771,7 @@ XS SCREENS
     -webkit-animation-name: tossing;
     height: 100px;
     margin-top: -135px;
-    margin-left: 250%;
+    margin-left: 100%;
     -webkit-animation-duration: 1s;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
@@ -1769,6 +1779,7 @@ XS SCREENS
     animation-direction : alternate-reverse;
     -webkit-animation-direction : alternate-reverse;
     height: 200px;
+    z-index: 1;
 }
 
 .tossing3 {
@@ -1797,6 +1808,7 @@ XS SCREENS
     width: 100%;
   
   }
+ 
   .title-left {
     font-size: 2rem;
     margin-left: 20%;
@@ -1806,6 +1818,7 @@ XS SCREENS
     font-size: 2rem;
     margin-left: 35%;
     position:relative;
+    z-index: 1;
   }
 
   .back-to-top {
@@ -1819,7 +1832,7 @@ XS SCREENS
     line-height: 1;
     font-size: 16px;
     border-radius: 50%;
-    right: 26%;
+    right: 2%;
     bottom: 15px;
     transition: background 0.5s;
     z-index: 11;
@@ -1966,7 +1979,7 @@ height: 300px;
   -webkit-animation-name: tossing;
   height: 100px;
   margin-top: -135px;
-  margin-left: 250%;
+  margin-left: 200%;
   -webkit-animation-duration: 1s;
   animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
@@ -1974,6 +1987,8 @@ height: 300px;
   animation-direction : alternate-reverse;
   -webkit-animation-direction : alternate-reverse;
   height: 200px;
+  overflow: hidden;
+  z-index: -1;
 }
 
 .tossing3 {
@@ -2023,7 +2038,7 @@ XS SCREENS
         line-height: 1;
         font-size: 16px;
         border-radius: 50%;
-        right: 21%;
+        right: 2%;
         bottom: 15px;
         transition: background 0.5s;
         z-index: 11;
@@ -2232,7 +2247,7 @@ XSSCREENS
       line-height: 1;
       font-size: 16px;
       border-radius: 50%;
-      right: 15%;
+      right: 2%;
       bottom: 15px;
       transition: background 0.5s;
       z-index: 11;
@@ -2446,7 +2461,7 @@ XSSCREENS
     line-height: 1;
     font-size: 16px;
     border-radius: 50%;
-    right: 15%;
+    right: 2%;
     bottom: 15px;
     transition: background 0.5s;
     z-index: 11;
@@ -2672,7 +2687,7 @@ div.form-contact {
     line-height: 1;
     font-size: 16px;
     border-radius: 50%;
-    right: 15%;
+    right: 2%;
     bottom: 15px;
     transition: background 0.5s;
     z-index: 11;
@@ -2896,7 +2911,7 @@ p.lead {
   line-height: 1;
   font-size: 16px;
   border-radius: 50%;
-  right: 15%;
+  right: 2%;
   bottom: 15px;
   transition: background 0.5s;
   z-index: 11;
@@ -3121,7 +3136,7 @@ p.lead {
   line-height: 1;
   font-size: 16px;
   border-radius: 50%;
-  right: 15%;
+  right: 2%;
   bottom: 15px;
   transition: background 0.5s;
   z-index: 11;
@@ -3347,7 +3362,7 @@ p.lead {
   line-height: 1;
   font-size: 16px;
   border-radius: 50%;
-  right: 15%;
+  right: 2%;
   bottom: 15px;
   transition: background 0.5s;
   z-index: 11;
@@ -3574,7 +3589,7 @@ p.lead {
   line-height: 1;
   font-size: 16px;
   border-radius: 50%;
-  right: 15%;
+  right: 2%;
   bottom: 15px;
   transition: background 0.5s;
   z-index: 11;
@@ -3758,7 +3773,8 @@ MEDIUM SCREENS
 
 div.container-intro {
   text-align: center;
-  
+
+  justify-content: center;
   z-index: 1;
   position:absolute;
 }
@@ -3806,7 +3822,7 @@ p.lead {
   line-height: 1;
   font-size: 16px;
   border-radius: 50%;
-  right: 1%;
+  right: 2%;
   bottom: 15px;
   transition: background 0.5s;
   z-index: 11;
@@ -3991,6 +4007,7 @@ height: 100px;
   width: 100%;
   height: 100%;
   display: flex;
+  margin-top: 10%;
   max-width: 1100px;
   max-height: 550px;   
   min-height: 400px;
@@ -4019,22 +4036,26 @@ transition: 0.6s all linear;
 }
 
 .carousel-item__info {
-height: 100%;
-display: flex;
-justify-content: center;
-flex-direction: column;
-
-  display: -webkit-flex;
--webkit-justify-content: center;
--webkit-flex-direction: column;
-
-order: 1;
-left: 0;
-margin: auto;
-padding: 0 40px;
-width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  
+    display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column;
+  
+  order: 1;
+  left: 0;
+  margin: auto;
+  padding: 0 40px;
+  width: 40%;
 
 }
+
+
 
 .carousel-item__image {
   width: 60%;
@@ -4061,7 +4082,7 @@ transition: 0.6s all ease-in-out;
   font-size: 10px;
   text-transform: uppercase;
   margin: 0;
-  color: #7E7E7E;    
+  color: #d0d0d0;    
   font-weight: 700;
   transform: translateY(25%);
   opacity: 0;
@@ -4071,12 +4092,13 @@ transition: 0.6s all ease-in-out;
 
 .carousel-item__title {
   margin: 15px 0 0 0;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', 
+  serif;
   font-size: 44px;
   line-height: 45px;
   letter-spacing: 3px;
   font-weight: 700;
-  color: #2C2C2C;
+  color: #c5c5c5;
   transform: translateY(25%);
   opacity: 0;
   visibility: hidden;
@@ -4101,7 +4123,9 @@ transition: 0.6s all ease-in-out;
   linear-gradient(to bottom, rgba(37, 37, 37, 0.52), rgba(126, 126, 126, 0.73)),
   url(./img/merch.png);
   background-size: cover;
+  background-position-x: center;
 }
+
 
 
 .carousel-item--2 {
@@ -4109,6 +4133,7 @@ transition: 0.6s all ease-in-out;
     linear-gradient(to bottom, rgba(37, 37, 37, 0.52), rgba(126, 126, 126, 0.73)),
   url(./img/coffee.png);
   background-size: cover;
+  background-position-x: center;
 }
 
 .carousel-item--3 {
@@ -4116,28 +4141,45 @@ transition: 0.6s all ease-in-out;
   linear-gradient(to bottom, rgba(37, 37, 37, 0.52), rgba(126, 126, 126, 0.73)),
   url(./img/Mosquito.png);
   background-size: cover;
+  background-position-x: center;
 }
 
 .carousel-item__container{
+width: 170%;
 
+}
+
+
+@media screen and (max-width: 400px) {
+  .carousel-item__container{
+    width: 500%;
+    }    
 }
 
 .carousel-item__btn {
   width: 35%;
-  color: #2C2C2C;
+  color: black;
   font-family: 'Open Sans', sans-serif;
-  letter-spacing: 3px;
-  font-size: 11px;
+  letter-spacing: 6px;
+  font-size: 20px;
   text-transform: uppercase;
-  margin: 0;
-  width: 35%;
-  font-weight: 700;
-text-decoration: none;
-    transform: translateY(25%);
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.6s all ease-in-out;
+  margin-right: 5%;
+  font-weight: 1100;
 }
+
+.fa{
+  color: #000;
+}
+
+.fa:hover {
+  color: rgb(163, 223, 94);
+  transition: all 0.5s ease-in-out;
+}
+
+.carousel-item__btn2 {
+  float: left;
+}
+
 
 .carousel__nav {
   position: absolute;

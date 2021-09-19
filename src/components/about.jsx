@@ -1,5 +1,4 @@
 import React from "react";
-import myImage from "../img/myImage.png";
 import logo1 from "../img/cactus logo.png";
 import logo2 from "../img/profile pic";
 
@@ -9,7 +8,6 @@ class About extends React.Component {
     super();
     this.state = {
       logo: logo1,
-      logo: logo2,
 
       skills: [
         { id: "HTML5_skill", content: "HTML5", porcentage: "90%", value: "90" },
@@ -52,49 +50,43 @@ class About extends React.Component {
   render() {
     return (
       <section id="about" className="about-mf sect-pt4 ">
-           
         <div className="container">
-          
           <div className="row">
-            
             <div className="col-sm-12">
-              
-            
               <div className="title-box-3">
-                        <h5 className="title-left ">About me</h5>
-                      </div>
-                <div className="row">
-                <div className="col-xl-6 px-0 ">
-                    <div className="about-me pt-4 pt-md-0 px-0 col-xl-12 col-12">
-                    <img src={logo2} alt="Profile Pic" className="profile" />
-                 
+                  <h5 className="title-left ">About me</h5>
+              </div>
+            <div className="row">
+              <div className="col-xl-6 px-0 ">
+                <div className="about-me pt-4 pt-md-0 px-0 col-xl-12 col-12">
+                  <img src={logo2} alt="Profile Pic" className="profile" />
                       {this.state.about_me.map(content => {
-                        return (
-                          <p className="lead col-12" key={content.id}>
-                            {content.content}
-                          </p>
-                        );
+                return (
+                  <p className="lead col-12" key={content.id}>
+                    {content.content}
+                  </p>
+                     );
                       })}
+                </div>
+               </div>
+              <div className="col-xl-6">
+                <div className="row">
+                  <div
+                    className="col-sm-6 col-md-5"
+                    style={{ margin: "0 auto" }}
+                  >
+                    <div
+                      className="about-img"
+                      style={{ textAlign: "center" }}
+                    >
+                      <img
+                        className="img-fluid rounded b-shadow-a"
+                        alt=""
+                      />
                     </div>
                   </div>
-                  <div className="col-xl-6">
-                    <div className="row">
-                      <div
-                        className="col-sm-6 col-md-5"
-                        style={{ margin: "0 auto" }}
-                      >
-                        <div
-                          className="about-img"
-                          style={{ textAlign: "center" }}
-                        >
-                          <img
-                            className="img-fluid rounded b-shadow-a"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="skill-mf">
+                </div>
+                <div className="skill-mf">
                       {/* <p className="title-s">Skill</p> */}
                       {this.state.skills.map(skill => {
                         return (
