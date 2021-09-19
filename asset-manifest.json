@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/Portfolio-React/static/css/main.abc61bd1.chunk.css",
+    "main.js": "/Portfolio-React/static/js/main.4be6cbab.chunk.js",
+    "main.js.map": "/Portfolio-React/static/js/main.4be6cbab.chunk.js.map",
+    "runtime-main.js": "/Portfolio-React/static/js/runtime-main.cc5fc537.js",
+    "runtime-main.js.map": "/Portfolio-React/static/js/runtime-main.cc5fc537.js.map",
+    "static/css/2.149657e3.chunk.css": "/Portfolio-React/static/css/2.149657e3.chunk.css",
+    "static/js/2.6e5db845.chunk.js": "/Portfolio-React/static/js/2.6e5db845.chunk.js",
+    "static/js/2.6e5db845.chunk.js.map": "/Portfolio-React/static/js/2.6e5db845.chunk.js.map",
+    "index.html": "/Portfolio-React/index.html",
+    "precache-manifest.880888b92f68c153a81740946506b3a8.js": "/Portfolio-React/precache-manifest.880888b92f68c153a81740946506b3a8.js",
+    "service-worker.js": "/Portfolio-React/service-worker.js",
+    "static/css/2.149657e3.chunk.css.map": "/Portfolio-React/static/css/2.149657e3.chunk.css.map",
+    "static/css/main.abc61bd1.chunk.css.map": "/Portfolio-React/static/css/main.abc61bd1.chunk.css.map",
+    "static/js/2.6e5db845.chunk.js.LICENSE.txt": "/Portfolio-React/static/js/2.6e5db845.chunk.js.LICENSE.txt",
+    "static/media/9010B281-BF35-401F-AD31-B459D7221AB6.jpeg": "/Portfolio-React/static/media/9010B281-BF35-401F-AD31-B459D7221AB6.afa865a1.jpeg",
+    "static/media/Mosquito.png": "/Portfolio-React/static/media/Mosquito.a3c4070a.png",
+    "static/media/cactus logo.png": "/Portfolio-React/static/media/cactus logo.30452986.png",
+    "static/media/cactus logo2.png": "/Portfolio-React/static/media/cactus logo2.fc5b9e18.png",
+    "static/media/style.css": "/Portfolio-React/static/media/merch.bafc3a4f.png",
+    "static/media/earth.jpg": "/Portfolio-React/static/media/earth.67af05e1.jpg",
+    "static/media/font-awesome.css": "/Portfolio-React/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/ionicons.css": "/Portfolio-React/static/media/ionicons.621bd386.svg",
+    "static/media/pic.jpg": "/Portfolio-React/static/media/pic.99d4b3c4.jpg",
+    "static/media/profile pic": "/Portfolio-React/static/media/profile pic.3fdf87ad.bin",
+    "static/media/tumbleweed.png": "/Portfolio-React/static/media/tumbleweed.58095e2f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cc5fc537.js",
+    "static/css/2.149657e3.chunk.css",
+    "static/js/2.6e5db845.chunk.js",
+    "static/css/main.abc61bd1.chunk.css",
+    "static/js/main.4be6cbab.chunk.js"
+  ]
+}
