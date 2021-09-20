@@ -96,7 +96,7 @@ class Intro extends React.Component {
               number: {
                 density: {
                   enable: true,
-                  value_area: 2000,
+                  value_area: 2500,
                 },
                 value: 80,
               },
