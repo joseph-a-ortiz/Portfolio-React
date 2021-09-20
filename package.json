@@ -17,7 +17,8 @@
     "react-scripts": "^3.3.0",
     "react-tsparticles": "^1.34.0",
     "react-typed": "^1.1.2",
-    "typed.js": "^2.0.10"
+    "typed.js": "^2.0.10",
+    "yarn": "^1.22.11"
   },
   "scripts": {
     "predeploy": "yarn build",
@@ -26,7 +27,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-    
   },
   "eslintConfig": {
     "extends": "react-app"
