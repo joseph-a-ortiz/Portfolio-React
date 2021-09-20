@@ -10,18 +10,18 @@ class About extends React.Component {
       logo: logo1,
 
       skills: [
-        { id: "HTML5_skill", content: "HTML5", porcentage: "90%", value: "90" },
-        { id: "CSS3_skill", content: "CSS3", porcentage: "90%", value: "90" },
+        { id: "HTML5_skill", content: "HTML", porcentage: "90%", value: "90" },
+        { id: "CSS3_skill", content: "CSS", porcentage: "90%", value: "90" },
         {
           id: "JavaScript_skill",
           content: "JavaScript",
-          porcentage: "75%",
-          value: "75"
+          porcentage: "80%",
+          value: "80"
         }, {
           id: "React_skill",
           content: "React",
-          porcentage: "75%",
-          value: "75"
+          porcentage: "80%",
+          value: "80"
         },
         {
           id: "ReactNative_skill",
@@ -30,10 +30,16 @@ class About extends React.Component {
           value: "75"
         },
         {
-          id: "JSX_skill",
+          id: "Backend_skill",
           content: "NodeJS, Express, MongoDB",
-          porcentage: "60%",
-          value: "60"
+          porcentage: "75%",
+          value: "75"
+        },
+        {
+          id: "Heroku",
+          content: "Heroku",
+          porcentage: "75%",
+          value: "75"
         },
       ],
       about_me: [
@@ -51,10 +57,11 @@ class About extends React.Component {
     return (
       <section id="about" className="about-mf sect-pt4 ">
         <div className="container">
+        <h2 className="title-align">About me</h2>
           <div className="row">
             <div className="col-sm-12">
               <div className="title-box-3">
-                  <h5 className="title-left ">About me</h5>
+                  
               </div>
             <div className="row">
               <div className="col-xl-6 px-0 ">
@@ -87,7 +94,7 @@ class About extends React.Component {
                   </div>
                 </div>
                 <div className="skill-mf">
-                      {/* <p className="title-s">Skill</p> */}
+                  
                       {this.state.skills.map(skill => {
                         return (
                           <React.Fragment key={skill.id}>

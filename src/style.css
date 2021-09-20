@@ -17,16 +17,11 @@ GENERAL STYLING
 @media screen and (max-width: 600px) {
   div.container {
     width: 100%;
-    
   }
-}
 
-@media screen and (max-width: 600px) {
-nav.navbar-b {
-  width: 100%;
-
-
-  }
+  nav.navbar-b {
+    width: 100%;
+    }
 }
 
 p.lead {
@@ -34,11 +29,11 @@ p.lead {
   margin-top: 3%;
 }
 
-
-
 body {
   background-color: #f1dd9c !important;
   color: #4e4e4e!important;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
 }
 
 h1,
@@ -61,59 +56,7 @@ a:hover {
   transition: all 0.5s ease-in-out;
 }
 
-.p-r {
-  position: relative;
-}
-
-.color-a {
-  color: #0078ff;
-}
-
-.color-d {
-  color: #f5f5f5;
-}
-
-.color-text-a {
-  color: #4e4e4e;
-}
-
-.box-shadow,
-.paralax-mf,
-.service-box,
-.work-box,
-.card-blog {
-  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
-}
-
-.box-shadow-a,
-.button3:hover {
-  box-shadow: 0 0 0 4px #cde1f8;
-}
-
-
-.box-shadow-a,
-.button:hover {
-  box-shadow: 0 0 0 4px #cde1f8;
-}
-
-.display-5 {
-  font-size: 2.5rem;
-  font-weight: 300;
-  line-height: 1.1;
-}
-
-.display-6 {
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 1.1;
-}
-
-.avatar {
-  width: 32px;
-  height: 32px;
-  margin-right: 4px;
-  overflow: hidden;
-}
+/*Intro*/
 
 .bg-image {
   background-repeat: no-repeat;
@@ -121,26 +64,6 @@ a:hover {
   background-size: 30px;
   background-position: center center;
   height: 20px;
-
-}
-
-.overlay-mf {
-  background-color: #0078ff;
-}
-
-.overlay-mf {
-  position: absolute;
-  top: 0;
-  left: 0px;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  opacity: .7;
-}
-
-.paralax-mf {
-  position: relative;
-  padding: 8rem 0;
 }
 
 .display-table {
@@ -159,115 +82,30 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-/* Sections */
+/* TITLE-ALIGN */
 
-.sect-4 {
-  padding: 4rem 0;
-}
-
-
-.sect-mt4 {
-  margin-top: 4rem;
-}
-
-/* Title S */
-
-.title-s {
-  font-weight: 600;
-  color: #1e1e1e;
-  font-size: 1.1rem;
-}
-
-/* Title A */
-
-.title-box {
-  margin-bottom: 4rem;
-}
-
-.title-a {
-  font-size: 3rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.title-a:before {
-  content: '';
-  position: absolute;
-  height: 3px;
-  background-color: #24af01;
-  width: 160px;
-  margin-top: 60px;
-}
-
-
-.subtitle-a {
-  color: #4e4e4e;
-}
-
-.line-mf {
-  width: 40px;
-  height: 5px;
-  background-color: #0078ff;
-  margin: 0 auto;
-}
-
-/* Title Left */
-
-.title-box-2 {
-  margin-bottom: 3rem;
-  
-}
-
-.title-left {
-  font-size: 2rem;
-  margin-left: 43%;
+.title-align{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   position:relative;
+  z-index: 1;
 }
 
-.title-left:before {
+.title-align:before{
   content: '';
   position: absolute;
   height: 3px;
   background-color: #24af01;
   width: 100px;
   bottom: -12px;
+  z-index: 1;
 }
 
-.title-left2 {
-  font-size: 2rem;
-  margin-left: 43%;
-  position:relative;
-}
-
-.title-left2:before {
-  content: '';
-  position: absolute;
-  height: 3px;
-  background-color: #24af01;
-  width: 100px;
-  bottom: -12px;
-}
-
-/* Box */
-
-.box-pl2 {
-  padding-left: 2rem;
-}
-
-.box-shadow-full {
-  padding: 3rem 1.25rem;
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.678);
-  margin-bottom: 3rem;
-  z-index: 2;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
-}
-
-
-/* Socials */
+/* SOCIALS */
 
 .socials {
   padding: 1.5rem 0;
@@ -295,27 +133,12 @@ a:hover {
   transition: all 500ms ease;
 }
 
-/* Ul resect */
+/* Ul */
 
-.ul-resect,
-.socials ul,
-.list-ico,
-.blog-wrapper .post-meta ul,
-.box-comments .list-comments,
-.widget-sidebar .list-sidebar,
-.widget-tags ul {
+.socials ul {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
-}
-
-.list-ico {
-  line-height: 2;
-}
-
-.list-ico span {
-  color: #0078ff;
-  margin-right: 10px;
 }
 
 /* Ico Circle */
@@ -330,37 +153,6 @@ a:hover {
   text-align: center;
   box-shadow: 0 0 0 10px #0078ff;
   display: block;
-}
-
-/* Owl Carousel */
-
-.owl-theme .owl-dots {
-  text-align: center;
-  margin-top: 18px;
-}
-
-.owl-theme .owl-dots .owl-dot {
-  display: inline-block;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  width: 18px;
-  height: 7px;
-  margin: 5px 5px;
-  background: #cde1f8;
-  border: 0px solid #cde1f8;
-  display: block;
-  transition: all 0.6s ease-in-out;
-  cursor: pointer;
-}
-
-.owl-theme .owl-dots .owl-dot:hover span {
-  background-color: #cde1f8;
-}
-
-.owl-theme .owl-dots .owl-dot.active span {
-  background-color: #1B1B1B;
-  width: 25px;
 }
 
 /* Scrolltop S */
@@ -464,9 +256,7 @@ a:hover {
   }
 }
 
-/*
-NAVBAR
-*/
+/* NAVBAR */
 
 .navbar-b {
   transition: all .5s ease-in-out;
@@ -668,9 +458,7 @@ NAVBAR
   opacity: 0.9;
 }
 
-/*
-INTRO
-*/
+/* INTRO */
 
 .intro {
   height: 100vh;
@@ -704,6 +492,13 @@ INTRO
 .intro .intro-subtitle {
   font-size: 1.5rem;
   font-weight: 300;
+}
+
+div.container-intro {
+  text-align: center;
+  justify-content: center;
+  z-index: 1;
+  position:absolute;
 }
 
 /* .intro .text-slider-items {
@@ -740,9 +535,7 @@ INTRO
   color: #fff;
 }
 
-/*
-ABOUT
-*/
+/* ABOUT */
 
 .about-mf .box-shadow-full {
   padding-top: 4rem;
@@ -773,9 +566,7 @@ ABOUT
   background-color: #24af01;
 }
 
-/*
-PORTFOLIO
-*/
+/* PORTFOLIO */
 
 @media screen and (max-width: 600px) {
   img.profile {
@@ -783,7 +574,6 @@ PORTFOLIO
     height: 100%;
     width: 100%;
   }
-
 }
 
 .profile {
@@ -791,131 +581,15 @@ PORTFOLIO
   height: 350px;
 }
 
-.work-box {
-  margin-bottom: 3rem;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  background-color: #fff;
-  
-}
+/* CONTACT */
 
-.work-box:hover img {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-}
-
-.work-img {
-  display: block;
-  overflow: hidden;
-}
-
-.work-img img {
-  transition: all 1s;
-}
-
-.work-content {
-  padding: 2rem 3% 1rem 4%;
-}
-
-.work-content .w-more {
-  color: #4e4e4e;
-  font-size: .8rem;
-}
-
-.work-content .w-more .w-ctegory {
-  color: #0078ff;
-}
-
-.work-content .w-like {
-  font-size: 2.5rem;
-  color: #0078ff;
-  float: right;
-}
-
-.work-content .w-like a {
-  color: #0078ff;
-}
-
-.work-content .w-like .num-like {
-  font-size: .7rem;
-}
-
-.w-title {
-  font-size: 1.2rem;
-}
-
-/*
-TESTIMONIALS
-*/
-
-.testimonials .owl-carousel .owl-item img {
-  width: auto;
-}
-
-.testimonial-box {
-  color: #fff;
-  text-align: center;
-}
-
-.testimonial-box .author-test {
-  margin-top: 1rem;
-}
-
-.testimonial-box .author-test img {
-  margin: 0 auto;
-}
-
-.testimonial-box .author {
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin: 1rem 0;
-  display: block;
-  font-size: 1.4rem;
-}
-
-.testimonial-box .comit {
-  font-size: 2rem;
-  color: #0078ff;
-  background-color: #fff;
-  width: 52px;
-  height: 52px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  line-height: 1.6;
-}
-
-/*
-CONTACT
-*/
-
-.footer-paralax {
-  padding: 4rem 0 0 0;
+#contact {
+  margin-top: 5rem;
 }
 
 .contact-mf {
   margin-top: 4rem;
 }
-
-/*
-FOOTER
-*/
-
-footer {
-  text-align: center;
-  color: #fff;
-  padding-bottom: 4rem;
-  padding: 0;
-}
-
-footer .copyright {
-  margin-bottom: .3rem;
-}
-
-/*
-CONTACT 
-*/
 
 #sendmessage {
   color: #0078ff;
@@ -951,9 +625,7 @@ CONTACT
   font-size: 13px;
 }
 
-/*
-BUTTON
-*/
+/* BUTTON */
 
 .button3 {
   display: inline-block;
@@ -971,7 +643,6 @@ BUTTON
   cursor: pointer;
 }
 
-
 .button {
   display: inline-block;
   padding: .3rem .6rem;
@@ -987,7 +658,6 @@ BUTTON
   transition: all 500ms ease;
   cursor: pointer;
 }
-
 
 .button3:focus {
   outline: 0;
@@ -1024,30 +694,64 @@ BUTTON
   border-radius: 5rem;
 }
 
-.btn-lg {
-  padding: .5rem 1rem;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  border-radius: .3rem;
+/* @MEDIA */
+
+@media screen and (max-width: 400px) {
+  .carousel-item__container{
+    width: 500%;
+    }    
 }
 
-@media (min-width: 577px) {
-  .counter-box {
-    margin-bottom: 1.8rem;
+@media screen and (min-width: 100px) and (max-width: 500px) {
+  .carousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 23%;
+    max-width: 1100px;
+    max-height: 550px;   
+    min-height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  .carousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 6%;
+    max-width: 1100px;
+    max-height: 550px;   
+    min-height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 10000px) {
+  .carousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 2%;
+    max-width: 1100px;
+    max-height: 550px;   
+    min-height: 400px;
+    overflow: hidden;
+    position: relative;
   }
 }
 
 @media (min-width: 767px) {
-  .about-mf .box-pl2 {
+  .about-mf {
     margin-top: 3rem;
     padding-left: 0rem;
   }
 
-  .card-blog {
-    margin-bottom: 3rem;
-  }
-
-  .contact-mf .box-pl2 {
+  .contact-mf {
     margin-top: 3rem;
     padding-left: 0rem;
   }
@@ -1060,12 +764,7 @@ BUTTON
   }
 }
 
-
 @media (min-width: 768px) {
-  .box-shadow-full {
-    padding: 3rem;
-  }
-
   .navbar-b.navbar-trans .nav-item,
   .navbar-b.navbar-reduce .nav-item {
     padding-left: 10px;
@@ -1087,37 +786,6 @@ BUTTON
   .intro-single .intro-title {
     font-size: 3.5rem;
   }
-
-  .testimonial-box .description {
-    padding: 0 5rem;
-  }
-
-  .post-box,
-  .form-comments,
-  .box-comments,
-  .widget-sidebar {
-    padding: 3rem;
-  }
-
-  .blog-wrapper .article-title {
-    font-size: 1.9rem;
-  }
-
-  .box-comments .list-comments .comment-author {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .testimonial-box .description {
-    padding: 0 8rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .testimonial-box .description {
-    padding: 0 13rem;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -1132,82 +800,15 @@ BUTTON
   }
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #ffffff;
-  color: #222222;
+/* PORTFOLIO */
+#portfolio{
+  margin-top: 1%;
 }
 
-.playfair-sc {
-  font-family: 'Playfair Display SC', serif;
-}
-
-.fp-controlArrow.fp-prev {
-  border-color: transparent #222222 transparent transparent;
-}
-
-.fp-controlArrow.fp-next {
-  border-color: transparent transparent transparent #222222;
-}
-
-.landing {
-  background-color: #ffffff;
-  color: #222222;
-  text-align: center;
-}
-
-.landing a {
-  color: #222222;
-  text-decoration: none;
-}
-
-.landing-call {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-}
-
-.landing-call:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-}
-
-.landing-call h1 {
-  font-family: 'Playfair Display SC', serif;
-}
-
-.portfolio {
-
-  text-align: center;
-}
-
-.about {
-  text-align: center;
-}
-
-.about .prof-shot {
-  border-radius: 50%;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-}
-
-.about .prof-shot:hover {
-  border-radius: 50%;
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
-}
+/* CONTACT */
 
 .contact {
   text-align: center;
-}
-
-.foot {
-  text-align: center;
-  background-color: #222222;
-  color: #ffffff;
 }
 
 .floating {  
@@ -1240,8 +841,6 @@ body {
   left: -20%;
 }
 
-
-
 @keyframes floating {
   from { transform: translate(0,  0px); }
   55%  { transform: translate(0,15px); }
@@ -1260,7 +859,6 @@ body {
   to   { transform: translate(0, -0px); }    
 }
 
-
 .tossing {
   animation-name: tossing;
   -webkit-animation-name: tossing;
@@ -1274,22 +872,21 @@ body {
   animation-direction : alternate-reverse;
   -webkit-animation-direction : alternate-reverse;
   height: 300px;
-
 }
-  
-  .tossing2 {
-    animation-name: tossing;
-    -webkit-animation-name: tossing;
-    height: 100px;
-    margin-top: -135px;
-    margin-left: 950px;
-    -webkit-animation-duration: 1s;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-direction : alternate-reverse;
-    -webkit-animation-direction : alternate-reverse;
-    height: 200px;
+
+.tossing2 {
+  animation-name: tossing;
+  -webkit-animation-name: tossing;
+  height: 100px;
+  margin-top: -135px;
+  margin-left: 950px;
+  -webkit-animation-duration: 1s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction : alternate-reverse;
+  -webkit-animation-direction : alternate-reverse;
+  height: 200px;
 }
 
 .tossing3 {
@@ -1308,241 +905,89 @@ body {
 }
 
 @keyframes tossing {
-0% {
+  0% {
     transform: rotate(2deg);
-   
-}
+  }
 
-100% {
-  transform: rotate(-2deg);	
-}						
+  100% {
+    transform: rotate(-2deg);	
+  }						
     
 }
 
 
 @keyframes tossing2 {
   0% {
-      transform: rotate(2deg);
-     
+      transform: rotate(2deg); 
   }
   
   100% {
     transform: rotate(-2deg);	
   }						
-      
-  }
-
-@keyframes tossing3{
-  0% {
-      transform: rotate(2deg);
-     
-  }
-  
-  100% {
-    transform: rotate(-2deg);	
-  }						
-      
-  }
-  
-.round{
-
-background: linear-gradient(145deg, rgba(206,81,203,1) 0%, rgba(207,90,192,1) 5%, rgba(222,226,45,1) 73%, rgba(222,226,45,1) 100%, rgba(222,226,45,1) 100%); 
-border-radius: 50%;
-position: relative;
 }
 
-.round2{
-
+@keyframes tossing3 {
+  0% {
+      transform: rotate(2deg); 
+  }
+  
+  100% {
+    transform: rotate(-2deg);	
+  }						
+}
+  
+.round {
   background: linear-gradient(145deg, rgba(206,81,203,1) 0%, rgba(207,90,192,1) 5%, rgba(222,226,45,1) 73%, rgba(222,226,45,1) 100%, rgba(222,226,45,1) 100%); 
   border-radius: 50%;
   position: relative;
-  }
+}
 
-  .round3{
+.round2 {
+  background: linear-gradient(145deg, rgba(206,81,203,1) 0%, rgba(207,90,192,1) 5%, rgba(222,226,45,1) 73%, rgba(222,226,45,1) 100%, rgba(222,226,45,1) 100%); 
+  border-radius: 50%;
+  position: relative;
+}
 
-    background: linear-gradient(145deg, rgba(206,81,203,1) 0%, rgba(207,90,192,1) 5%, rgba(222,226,45,1) 73%, rgba(222,226,45,1) 100%, rgba(222,226,45,1) 100%); 
-    border-radius: 50%;
-    position: relative;
-    }
-
-    .mt-0 {
-      margin-top: 0 !important;
-    }
-    
-    .ml-1 {
-      margin-left: (spacer-x * .25) !important;
-    }
-    .ml-2 {
-      margin-left: (spacer-x * .5) !important;
-    }
-    .ml-3 {
-      margin-left: spacer-y spacer-x !important;
-    }
-    .ml-4 {
-      margin-left: (spacer-x * 10) !important;
-    }
+.round3 {
+  background: linear-gradient(145deg, rgba(206,81,203,1) 0%, rgba(207,90,192,1) 5%, rgba(222,226,45,1) 73%, rgba(222,226,45,1) 100%, rgba(222,226,45,1) 100%); 
+  border-radius: 50%;
+  position: relative;
+}
 
     /*
 XS SCREENS 
 */
 
-    @media screen and (max-width: 300px)  {
-      nav.navbar-b {
-        width: 100%;
-      
-      }
-      div.container {
-        width: 100%;
-      }
-      .title-left {
-        font-size: 2rem;
-        margin-left: 5%;
-        position:relative;
-      }
-      .title-left2 {
-        font-size: 2rem;
-        margin-left: 35%;
-        position:relative;
-      }
+@media screen and (max-width: 300px)  {
+  nav.navbar-b {
+      width: 100%; 
+    }
 
-      .back-to-top {
-        position: fixed;
-        display: none;
-        background: #0078ff;
-        color: #fff;
-        width: 44px;
-        height: 44px;
-        text-align: center;
-        line-height: 1;
-        font-size: 16px;
-        border-radius: 50%;
-        right: 2%;
-        bottom: 15px;
-        transition: background 0.5s;
-        z-index: 11;
-      }      
+  div.container {
+      width: 100%;
+    }
+
+   .tossing {
+      display: none;
+    }
     
-      div.slides {
-        display: grid;
-        overflow: hidden;
-        margin-right: 0%;
-        margin-left: -105%;
-        margin-bottom: -35%;
-      }
-    div.slides >  .slide {
-      grid-area: 1 / -10;
-     margin-left: 277px;
-     margin-top: 60px;
-     margin-bottom: 140px;
+    .tossing2 {
+      display: none;
+    }
   
-   }
-    div.slides > button {
-      appearance: none;
-      background: transparent;
-      border: none;
-      color: white;
-      position: relative;
-      margin-right: -4px;
-      font-size: 5rem;
-      width: 5rem;
-      height: 5rem;
-      top: 30%;
-      transition: opacity 0.3s;
-      opacity: 0.8;
-      z-index: 3;
-   }
-    .slides > button:hover {
-      opacity: 1;
-   }
-    .slides > button:focus {
-      outline: none;
-   }
-    .slides > button:first-child {
-      left: -325%;
-      top: 26%;
-   }
-    .slides > button:last-child {
-      right: 170%;
-      top: 25%;
-   }
-
-   div.slideContent {
-    width: 80vw;
-    height: 55vw;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    transition: transform .7s ease-in-out;
-    opacity: .5;
-  
-    display: grid;
-    align-content: center;
-  
-  
-    transform-style: preserve-3d;
-    transform: perspective(1000px) translateX(calc(100% * var(--offset)))
-      rotateY(calc(-45deg * var(--dir)));
+    .tossing3 {
+      display: none;
+    }
   }
 
-    .slideContentInner {
-      transform-style: preserve-3d;
-      transform: translateZ(2rem);
-      transition: opacity 0.3s linear;
-      text-shadow: 0 0.1rem 1rem #000;
-      opacity: 0;
-   }
-    .slideContentInner .slideSubtitle, .slideContentInner .slideTitle {
-      font-size: 2rem;
-      font-weight: normal;
-      letter-spacing: 0.2ch;
-      text-transform: uppercase;
-      margin-top: -100px;
-      color: #f1dd9c;
-   }
- 
-    .slideContentInner .slideDescription {
-      margin: 0;
-      font-size: 0.8rem;
-      letter-spacing: 0.2ch;
-   }
-    .slideBackground {
-      position: absolute;
-      top: 0;
-      left: 10%;
-      right: 10%;
-      bottom: 0;
-      background-size: cover;
-      background-position: center center;
-      z-index: -1;
-      opacity: 0;
-      transition: opacity 0.8s linear, transform 0.3s ease-in-out;
-      pointer-events: none;
-      margin-left: 90px;
-      margin-right: -90px;
-      transform: translateX(calc(10% * var(--dir)));
-   }
-    .slide[data-active] {
-      z-index: 1;
-      pointer-events: auto;
-   }
-    .slide[data-active] .slideBackground {
-      opacity: 0;
-      transform: none;
-   }
-    .slide[data-active] .slideContentInner {
-      opacity: 1;
-   }
-    .slide[data-active] .slideContent {
-      --x: calc(var(--px) - .5);
-      --y: calc(var(--py) - .5);
-      opacity: 1;
-      transform: perspective(1000px);
-   }
-    .slide[data-active] .slideContent:hover {
-      transition: none;
-      transform: perspective(1000px) rotateY(calc(var(--x) * 45deg)) rotateX(calc(var(--y) * -45deg));
-   }
-   .tossing {
+/* XS SCREENS */
+
+@media screen and (min-width: 300px) and (max-width: 350px) {
+  nav.navbar-b {
+    width: 100%;
+  }
+  
+ .tossing {
     animation-name: tossing;
     -webkit-animation-name: tossing;
     height: 100px;
@@ -1555,216 +1000,7 @@ XS SCREENS
     animation-direction : alternate-reverse;
     -webkit-animation-direction : alternate-reverse;
     height: 300px;
-    display: none;
   }
-    
-    .tossing2 {
-      animation-name: tossing;
-      -webkit-animation-name: tossing;
-      height: 100px;
-      margin-top: -135px;
-      margin-left: 70%;
-      -webkit-animation-duration: 1s;
-      animation-iteration-count: infinite;
-      -webkit-animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-      animation-direction : alternate-reverse;
-      -webkit-animation-direction : alternate-reverse;
-      height: 200px;
-      display: none;
-  }
-  
-  .tossing3 {
-    animation-name: tossing;
-    -webkit-animation-name: tossing;
-    height: 100px;
-    margin-top: 350px;
-    margin-left: 360%;
-    -webkit-animation-duration: .3s;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-direction : alternate-reverse;
-    -webkit-animation-direction : alternate-reverse;
-    height: 100px;
-    display: none;
-  }
-
-  }
-/*
-XS SCREENS 
-*/
-
-  @media screen and (min-width: 300px) and (max-width: 350px) {
-    nav.navbar-b {
-      width: 100%;
-    
-    }
-    .title-left {
-      font-size: 2rem;
-      margin-left: 20%;
-      position:relative;
-
-    }
-    .title-left2 {
-      font-size: 2rem;
-      margin-left: 35%;
-      position:relative;
-      z-index: 2;
-    }
-
-    .back-to-top {
-      position: fixed;
-      display: none;
-      background: #0078ff;
-      color: #fff;
-      width: 44px;
-      height: 44px;
-      text-align: center;
-      line-height: 1;
-      font-size: 16px;
-      border-radius: 50%;
-      right: 2%;
-      bottom: 15px;
-      transition: background 0.5s;
-      z-index: 11;
-    }      
-  
-    div.slides {
-      display: grid;
-      overflow: hidden;
-      margin-right: 0%;
-      margin-left: -105%;
-      margin-bottom: -35%;
-    }
-  div.slides >  .slide {
-    grid-area: 1 / -10;
-   margin-left: 370px;
-   margin-top: 60px;
-   margin-bottom: 140px;
-
- }
-  div.slides > button {
-    appearance: none;
-    background: transparent;
-    border: none;
-    color: white;
-    position: relative;
-    margin-right: 14px;
-    font-size: 5rem;
-    width: 5rem;
-    height: 5rem;
-    top: 30%;
-    transition: opacity 0.3s;
-    opacity: 0.8;
-    z-index: 3;
- }
-  .slides > button:hover {
-    opacity: 1;
- }
-  .slides > button:focus {
-    outline: none;
- }
-  .slides > button:first-child {
-    left: -325%;
-    top: 26%;
- }
-  .slides > button:last-child {
-    right: 170%;
-    top: 25%;
- }
-
- div.slideContent {
-  width: 80vw;
-  height: 55vw;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  transition: transform .7s ease-in-out;
-  opacity: .5;
-
-  display: grid;
-  align-content: center;
-
-
-  transform-style: preserve-3d;
-  transform: perspective(1000px) translateX(calc(100% * var(--offset)))
-    rotateY(calc(-45deg * var(--dir)));
-}
-
-  .slideContentInner {
-    transform-style: preserve-3d;
-    transform: translateZ(2rem);
-    transition: opacity 0.3s linear;
-    text-shadow: 0 0.1rem 1rem #000;
-    opacity: 0;
- }
-  .slideContentInner .slideSubtitle, .slideContentInner .slideTitle {
-    font-size: 2rem;
-    font-weight: normal;
-    letter-spacing: 0.2ch;
-    text-transform: uppercase;
-    margin-top: -100px;
-    color: #f1dd9c;
- }
-
-  .slideContentInner .slideDescription {
-    margin: 0;
-    font-size: 0.8rem;
-    letter-spacing: 0.2ch;
- }
-  .slideBackground {
-    position: absolute;
-    top: 0;
-    left: 10%;
-    right: 10%;
-    bottom: 0;
-    background-size: cover;
-    background-position: center center;
-    z-index: -1;
-    opacity: 0;
-    transition: opacity 0.8s linear, transform 0.3s ease-in-out;
-    pointer-events: none;
-    margin-left: 90px;
-    margin-right: -90px;
-    transform: translateX(calc(10% * var(--dir)));
- }
-  .slide[data-active] {
-    z-index: 1;
-    pointer-events: auto;
- }
-  .slide[data-active] .slideBackground {
-    opacity: 0;
-    transform: none;
- }
-  .slide[data-active] .slideContentInner {
-    opacity: 1;
- }
-  .slide[data-active] .slideContent {
-    --x: calc(var(--px) - .5);
-    --y: calc(var(--py) - .5);
-    opacity: 1;
-    transform: perspective(1000px);
- }
-  .slide[data-active] .slideContent:hover {
-    transition: none;
-    transform: perspective(1000px) rotateY(calc(var(--x) * 45deg)) rotateX(calc(var(--y) * -45deg));
- }
- .tossing {
-  animation-name: tossing;
-  -webkit-animation-name: tossing;
-  height: 100px;
-  margin-top: 0px;
-  margin-left: 60px;
-  -webkit-animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction : alternate-reverse;
-  -webkit-animation-direction : alternate-reverse;
-  height: 300px;
-
-}
   
   .tossing2 {
     animation-name: tossing;
@@ -1780,391 +1016,32 @@ XS SCREENS
     -webkit-animation-direction : alternate-reverse;
     height: 200px;
     z-index: 1;
+  }
+
+  .tossing3 {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: 350px;
+    margin-left: 360%;
+    -webkit-animation-duration: .3s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 100px;
+  }
 }
 
-.tossing3 {
-  animation-name: tossing;
-  -webkit-animation-name: tossing;
-  height: 100px;
-  margin-top: 350px;
-  margin-left: 360%;
-  -webkit-animation-duration: .3s;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction : alternate-reverse;
-  -webkit-animation-direction : alternate-reverse;
-  height: 100px;
-}
-
-}
-
-/*
-XS SCREENS 
-*/
+/* XS SCREENS */
 
 @media screen and (min-width: 350px) and (max-width: 400px) {
   nav.navbar-b {
     width: 100%;
-  
-  }
- 
-  .title-left {
-    font-size: 2rem;
-    margin-left: 20%;
-    position:relative;
-  }
-  .title-left2 {
-    font-size: 2rem;
-    margin-left: 35%;
-    position:relative;
-    z-index: 1;
   }
 
-  .back-to-top {
-    position: fixed;
-    display: none;
-    background: #0078ff;
-    color: #fff;
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    line-height: 1;
-    font-size: 16px;
-    border-radius: 50%;
-    right: 2%;
-    bottom: 15px;
-    transition: background 0.5s;
-    z-index: 11;
-  }      
-
-  div.slides {
-    display: grid;
-    overflow: hidden;
-    margin-right: 0%;
-    margin-left: -105%;
-    margin-bottom: -35%;
-  }
-div.slides >  .slide {
-  grid-area: 1 / -10;
- margin-left: 400px;
- margin-top: 60px;
- margin-bottom: 140px;
-
-}
-div.slides > button {
-  appearance: none;
-  background: transparent;
-  border: none;
-  color: white;
-  position: relative;
-  margin-right: 14px;
-  font-size: 5rem;
-  width: 5rem;
-  height: 5rem;
-  top: 30%;
-  transition: opacity 0.3s;
-  opacity: 0.8;
-  z-index: 3;
-}
-.slides > button:hover {
-  opacity: 1;
-}
-.slides > button:focus {
-  outline: none;
-}
-.slides > button:first-child {
-  left: -325%;
-  top: 26%;
-}
-.slides > button:last-child {
-  right: 170%;
-  top: 25%;
-}
-
-div.slideContent {
-width: 80vw;
-height: 55vw;
-background-size: cover;
-background-position: center center;
-background-repeat: no-repeat;
-transition: transform .7s ease-in-out;
-opacity: .5;
-
-display: grid;
-align-content: center;
-
-
-transform-style: preserve-3d;
-transform: perspective(1000px) translateX(calc(100% * var(--offset)))
-  rotateY(calc(-45deg * var(--dir)));
-}
-
-.slideContentInner {
-  transform-style: preserve-3d;
-  transform: translateZ(2rem);
-  transition: opacity 0.3s linear;
-  text-shadow: 0 0.1rem 1rem #000;
-  opacity: 0;
-}
-.slideContentInner .slideSubtitle, .slideContentInner .slideTitle {
-  font-size: 2rem;
-  font-weight: normal;
-  letter-spacing: 0.2ch;
-  text-transform: uppercase;
-  margin-top: -100px;
-  color: #f1dd9c;
-}
-
-.slideContentInner .slideDescription {
-  margin: 0;
-  font-size: 0.8rem;
-  letter-spacing: 0.2ch;
-}
-.slideBackground {
-  position: absolute;
-  top: 0;
-  left: 10%;
-  right: 10%;
-  bottom: 0;
-  background-size: cover;
-  background-position: center center;
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.8s linear, transform 0.3s ease-in-out;
-  pointer-events: none;
-  margin-left: 90px;
-  margin-right: -90px;
-  transform: translateX(calc(10% * var(--dir)));
-}
-.slide[data-active] {
-  z-index: 1;
-  pointer-events: auto;
-}
-.slide[data-active] .slideBackground {
-  opacity: 0;
-  transform: none;
-}
-.slide[data-active] .slideContentInner {
-  opacity: 1;
-}
-.slide[data-active] .slideContent {
-  --x: calc(var(--px) - .5);
-  --y: calc(var(--py) - .5);
-  opacity: 1;
-  transform: perspective(1000px);
-}
-.slide[data-active] .slideContent:hover {
-  transition: none;
-  transform: perspective(1000px) rotateY(calc(var(--x) * 45deg)) rotateX(calc(var(--y) * -45deg));
-}
-.tossing {
-animation-name: tossing;
--webkit-animation-name: tossing;
-height: 100px;
-margin-top: 0px;
-margin-left: 60px;
--webkit-animation-duration: 1.5s;
-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-animation-direction : alternate-reverse;
--webkit-animation-direction : alternate-reverse;
-height: 300px;
-
-}
-
-.tossing2 {
-  animation-name: tossing;
-  -webkit-animation-name: tossing;
-  height: 100px;
-  margin-top: -135px;
-  margin-left: 200%;
-  -webkit-animation-duration: 1s;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction : alternate-reverse;
-  -webkit-animation-direction : alternate-reverse;
-  height: 200px;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.tossing3 {
-animation-name: tossing;
--webkit-animation-name: tossing;
-height: 100px;
-margin-top: 350px;
-margin-left: 360%;
--webkit-animation-duration: .3s;
-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-animation-direction : alternate-reverse;
--webkit-animation-direction : alternate-reverse;
-height: 100px;
-}
-
-}
-/*
-XS SCREENS 
-*/
-
-    @media screen and (min-width: 400px) and (max-width: 500px) {
-      nav.navbar-b {
-        width: 100%;
-      
-      }
-      .title-left {
-        font-size: 2rem;
-        margin-left: 23%;
-        position:relative;
-      }
-      .title-left2 {
-        font-size: 2rem;
-        margin-left: 35%;
-        position:relative;
-      }
-
-      .back-to-top {
-        position: fixed;
-        display: none;
-        background: #0078ff;
-        color: #fff;
-        width: 44px;
-        height: 44px;
-        text-align: center;
-        line-height: 1;
-        font-size: 16px;
-        border-radius: 50%;
-        right: 2%;
-        bottom: 15px;
-        transition: background 0.5s;
-        z-index: 11;
-      }      
-    
-      div.slides {
-        display: grid;
-        overflow: hidden;
-        margin-right: 0%;
-        margin-left: -105%;
-        margin-bottom: -35%;
-      }
-    div.slides >  .slide {
-      grid-area: 1 / -10;
-     margin-left: 428px;
-     margin-top: 60px;
-     margin-bottom: 140px;
-  
-   }
-    div.slides > button {
-      appearance: none;
-      background: transparent;
-      border: none;
-      color: white;
-      position: relative;
-      margin-right: 0%;
-      font-size: 5rem;
-      width: 7rem;
-      height: 5rem;
-      top: 30%;
-      transition: opacity 0.3s;
-      opacity: 0.8;
-      z-index: 3;
-   }
-    .slides > button:hover {
-      opacity: 1;
-   }
-    .slides > button:focus {
-      outline: none;
-   }
-    .slides > button:first-child {
-      left: -325%;
-      top: 26%;
-   }
-    .slides > button:last-child {
-      right: 170%;
-      top: 25%;
-   }
-
-   div.slideContent {
-    width: 80vw;
-    height: 55vw;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    transition: transform .7s ease-in-out;
-    opacity: .5;
-  
-    display: grid;
-    align-content: center;
-  
-  
-    transform-style: preserve-3d;
-    transform: perspective(1000px) translateX(calc(100% * var(--offset)))
-      rotateY(calc(-45deg * var(--dir)));
-  }
-
-    .slideContentInner {
-      transform-style: preserve-3d;
-      transform: translateZ(2rem);
-      transition: opacity 0.3s linear;
-      text-shadow: 0 0.1rem 1rem #000;
-      opacity: 0;
-   }
-    .slideContentInner .slideSubtitle, .slideContentInner .slideTitle {
-      font-size: 2rem;
-      font-weight: normal;
-      letter-spacing: 0.2ch;
-      text-transform: uppercase;
-      margin-top: -100px;
-      color: #f1dd9c;
-   }
- 
-    .slideContentInner .slideDescription {
-      margin: 0;
-      font-size: 0.8rem;
-      letter-spacing: 0.2ch;
-   }
-    .slideBackground {
-      position: absolute;
-      top: 0;
-      left: 10%;
-      right: 10%;
-      bottom: 0;
-      background-size: cover;
-      background-position: center center;
-      z-index: -1;
-      opacity: 0;
-      transition: opacity 0.8s linear, transform 0.3s ease-in-out;
-      pointer-events: none;
-      margin-left: 90px;
-      margin-right: -90px;
-      transform: translateX(calc(10% * var(--dir)));
-   }
-    .slide[data-active] {
-      z-index: 1;
-      pointer-events: auto;
-   }
-    .slide[data-active] .slideBackground {
-      opacity: 0;
-      transform: none;
-   }
-    .slide[data-active] .slideContentInner {
-      opacity: 1;
-   }
-    .slide[data-active] .slideContent {
-      --x: calc(var(--px) - .5);
-      --y: calc(var(--py) - .5);
-      opacity: 1;
-      transform: perspective(1000px);
-   }
-    .slide[data-active] .slideContent:hover {
-      transition: none;
-      transform: perspective(1000px) rotateY(calc(var(--x) * 45deg)) rotateX(calc(var(--y) * -45deg));
-   }
-   .tossing {
+  .tossing {
     animation-name: tossing;
     -webkit-animation-name: tossing;
     height: 100px;
@@ -2177,24 +1054,78 @@ XS SCREENS
     animation-direction : alternate-reverse;
     -webkit-animation-direction : alternate-reverse;
     height: 300px;
-  
   }
-    
-    .tossing2 {
-      animation-name: tossing;
-      -webkit-animation-name: tossing;
-      height: 100px;
-      margin-top: -135px;
-      margin-left: 330px;
-      -webkit-animation-duration: 1s;
-      animation-iteration-count: infinite;
-      -webkit-animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-      animation-direction : alternate-reverse;
-      -webkit-animation-direction : alternate-reverse;
-      height: 200px;
+
+  .tossing2 {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: -135px;
+    margin-left: 200%;
+    -webkit-animation-duration: 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 200px;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .tossing3 {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: 350px;
+    margin-left: 360%;
+    -webkit-animation-duration: .3s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 100px;
+  }
+}
+
+/* XS SCREENS */
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  nav.navbar-b {
+    width: 100%;
+  }
+
+  .tossing {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: 0px;
+    margin-left: 60px;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 300px;
   }
   
+  .tossing2 {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: -135px;
+    margin-left: 330px;
+    -webkit-animation-duration: 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 200px;
+  }
+
   .tossing3 {
     animation-name: tossing;
     -webkit-animation-name: tossing;
@@ -2209,185 +1140,30 @@ XS SCREENS
     -webkit-animation-direction : alternate-reverse;
     height: 100px;
   }
+}
 
+  /* XSSCREENS */
+
+
+@media screen and (min-width: 500px) and (max-width: 576px) {
+  nav.navbar-b {
+    width: 100%;
   }
-
-  /*
-XSSCREENS
-  */
-
-
-  @media screen and (min-width: 500px) and (max-width: 576px) {
-
-
-    nav.navbar-b {
-      width: 100%;
-    
-    }
-    
-    .title-left {
-      font-size: 2rem;
-      margin-left: 30%;
-      position:relative;
-    }
-    .title-left2 {
-      font-size: 2rem;
-      margin-left: 35%;
-      position:relative;
-    }
-
-    .back-to-top {
-      position: fixed;
-      display: none;
-      background: #0078ff;
-      color: #fff;
-      width: 44px;
-      height: 44px;
-      text-align: center;
-      line-height: 1;
-      font-size: 16px;
-      border-radius: 50%;
-      right: 2%;
-      bottom: 15px;
-      transition: background 0.5s;
-      z-index: 11;
-    }      
   
-    div.slides {
-      display: grid;
-      overflow: hidden;
-      margin-right: 3%;
-      margin-left: -105%;
-      margin-bottom: -35%;
-    }
-  div.slides >  .slide {
-    grid-area: 1 / -10;
-   margin-left: 575px;
-   margin-top: 60px;
-   margin-bottom: 140px;
-
- }
-  div.slides > button {
-    appearance: none;
-    background: transparent;
-    border: none;
-    color: white;
-    position: relative;
-    margin-right: 50px;
-    font-size: 5rem;
-    width: 5rem;
-    height: 5rem;
-    top: 30%;
-    transition: opacity 0.3s;
-    opacity: 0.8;
-    z-index: 3;
- }
-  .slides > button:hover {
-    opacity: 1;
- }
-  .slides > button:focus {
-    outline: none;
- }
-  .slides > button:first-child {
-    left: -325%;
-    top: 26%;
- }
-  .slides > button:last-child {
-    right: 170%;
-    top: 25%;
- }
-
- div.slideContent {
-  width: 80vw;
-  height: 55vw;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  transition: transform .7s ease-in-out;
-  opacity: .5;
-
-  display: grid;
-  align-content: center;
-
-
-  transform-style: preserve-3d;
-  transform: perspective(1000px) translateX(calc(100% * var(--offset)))
-    rotateY(calc(-45deg * var(--dir)));
-}
-
-  .slideContentInner {
-    transform-style: preserve-3d;
-    transform: translateZ(2rem);
-    transition: opacity 0.3s linear;
-    text-shadow: 0 0.1rem 1rem #000;
-    opacity: 0;
- }
-  .slideContentInner .slideSubtitle, .slideContentInner .slideTitle {
-    font-size: 2rem;
-    font-weight: normal;
-    letter-spacing: 0.2ch;
-    text-transform: uppercase;
-    margin-top: -100px;
-    color: #f1dd9c;
- }
-
-  .slideContentInner .slideDescription {
-    margin: 0;
-    font-size: 0.8rem;
-    letter-spacing: 0.2ch;
- }
-  .slideBackground {
-    position: absolute;
-    top: 0;
-    left: 10%;
-    right: 10%;
-    bottom: 0;
-    background-size: cover;
-    background-position: center center;
-    z-index: -1;
-    opacity: 0;
-    transition: opacity 0.8s linear, transform 0.3s ease-in-out;
-    pointer-events: none;
-    margin-left: 90px;
-    margin-right: -90px;
-    transform: translateX(calc(10% * var(--dir)));
- }
-  .slide[data-active] {
-    z-index: 1;
-    pointer-events: auto;
- }
-  .slide[data-active] .slideBackground {
-    opacity: 0;
-    transform: none;
- }
-  .slide[data-active] .slideContentInner {
-    opacity: 1;
- }
-  .slide[data-active] .slideContent {
-    --x: calc(var(--px) - .5);
-    --y: calc(var(--py) - .5);
-    opacity: 1;
-    transform: perspective(1000px);
- }
-  .slide[data-active] .slideContent:hover {
-    transition: none;
-    transform: perspective(1000px) rotateY(calc(var(--x) * 45deg)) rotateX(calc(var(--y) * -45deg));
- }
  .tossing {
-  animation-name: tossing;
-  -webkit-animation-name: tossing;
-  height: 100px;
-  margin-top: 0px;
-  margin-left: 60px;
-  -webkit-animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction : alternate-reverse;
-  -webkit-animation-direction : alternate-reverse;
-  height: 300px;
-
-}
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: 0px;
+    margin-left: 60px;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 300px;
+  }
   
   .tossing2 {
     animation-name: tossing;
@@ -2402,259 +1178,96 @@ XSSCREENS
     animation-direction : alternate-reverse;
     -webkit-animation-direction : alternate-reverse;
     height: 200px;
+  }
+
+  .tossing3 {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: 350px;
+    margin-left: 360%;
+    -webkit-animation-duration: .3s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 100px;
+  }
 }
 
-.tossing3 {
-  animation-name: tossing;
-  -webkit-animation-name: tossing;
-  height: 100px;
-  margin-top: 350px;
-  margin-left: 360%;
-  -webkit-animation-duration: .3s;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction : alternate-reverse;
-  -webkit-animation-direction : alternate-reverse;
-  height: 100px;
-}
+  /* SMALL SCREENS */
 
-}
-
-
-
-  /*
-  SMALL SCREENS
-  */
-
-
-  @media screen and (min-width: 576px) and (max-width: 640px) {
-
-    div.container {
+@media screen and (min-width: 576px) and (max-width: 640px) {
+  div.container {
       width: 100%;
-    }
+  }
  
   nav.navbar-b {
     width: 100%;
-  
-  }
-  
-  .title-left {
-    font-size: 2rem;
-    margin-left: 30%;
-    position:relative;
-  }
-  .title-left2 {
-    font-size: 2rem;
-    margin-left: 35%;
-    position:relative;
   }
 
-  .back-to-top {
-    position: fixed;
-    display: none;
-    background: #0078ff;
-    color: #fff;
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    line-height: 1;
-    font-size: 16px;
-    border-radius: 50%;
-    right: 2%;
-    bottom: 15px;
-    transition: background 0.5s;
-    z-index: 11;
-  }      
-
-  div.slides {
-    display: grid;
-    overflow: hidden;
-    margin-right: -4%;
-    margin-left: -105%;
-    margin-bottom: -35%;
+  .tossing {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: 0px;
+    margin-left: 60px;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 300px;
   }
-div.slides >  .slide {
-  grid-area: 1 / -10;
- margin-left: 580px;
- margin-top: 60px;
- margin-bottom: 140px;
 
-}
-div.slides > button {
-  appearance: none;
-  background: transparent;
-  border: none;
-  color: white;
-  position: relative;
-  margin-right: 55px;
-  font-size: 5rem;
-  width: 5rem;
-  height: 5rem;
-  top: 30%;
-  transition: opacity 0.3s;
-  opacity: 0.8;
-  z-index: 3;
-}
-.slides > button:hover {
-  opacity: 1;
-}
-.slides > button:focus {
-  outline: none;
-}
-.slides > button:first-child {
-  left: -325%;
-  top: 26%;
-}
-.slides > button:last-child {
-  right: 170%;
-  top: 25%;
-}
+  .tossing2 {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: -135px;
+    margin-left: 350%;
+    -webkit-animation-duration: 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 200px;
+  }
 
-div.slideContent {
-width: 80vw;
-height: 55vw;
-background-size: cover;
-background-position: center center;
-background-repeat: no-repeat;
-transition: transform .7s ease-in-out;
-opacity: .5;
+  .tossing3 {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: 350px;
+    margin-left: 360%;
+    -webkit-animation-duration: .3s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 100px;
+  }
 
-display: grid;
-align-content: center;
-
-
-transform-style: preserve-3d;
-transform: perspective(1000px) translateX(calc(100% * var(--offset)))
-  rotateY(calc(-45deg * var(--dir)));
+  div.form-contact {
+    padding: 0px 20px;
+  }
 }
 
-.slideContentInner {
-  transform-style: preserve-3d;
-  transform: translateZ(2rem);
-  transition: opacity 0.3s linear;
-  text-shadow: 0 0.1rem 1rem #000;
-  opacity: 0;
-}
-.slideContentInner .slideSubtitle, .slideContentInner .slideTitle {
-  font-size: 2rem;
-  font-weight: normal;
-  letter-spacing: 0.2ch;
-  text-transform: uppercase;
-  margin-top: -100px;
-  color: #f1dd9c;
-}
+  /* SMALL SCREENS */
 
-.slideContentInner .slideDescription {
-  margin: 0;
-  font-size: 0.8rem;
-  letter-spacing: 0.2ch;
-}
-.slideBackground {
-  position: absolute;
-  top: 0;
-  left: 10%;
-  right: 10%;
-  bottom: 0;
-  background-size: cover;
-  background-position: center center;
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.8s linear, transform 0.3s ease-in-out;
-  pointer-events: none;
-  margin-left: 90px;
-  margin-right: -90px;
-  transform: translateX(calc(10% * var(--dir)));
-}
-.slide[data-active] {
-  z-index: 1;
-  pointer-events: auto;
-}
-.slide[data-active] .slideBackground {
-  opacity: 0;
-  transform: none;
-}
-.slide[data-active] .slideContentInner {
-  opacity: 1;
-}
-.slide[data-active] .slideContent {
-  --x: calc(var(--px) - .5);
-  --y: calc(var(--py) - .5);
-  opacity: 1;
-  transform: perspective(1000px);
-}
-.slide[data-active] .slideContent:hover {
-  transition: none;
-  transform: perspective(1000px) rotateY(calc(var(--x) * 45deg)) rotateX(calc(var(--y) * -45deg));
-}
-.tossing {
-animation-name: tossing;
--webkit-animation-name: tossing;
-height: 100px;
-margin-top: 0px;
-margin-left: 60px;
--webkit-animation-duration: 1.5s;
-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-animation-direction : alternate-reverse;
--webkit-animation-direction : alternate-reverse;
-height: 300px;
-
-}
-
-.tossing2 {
-  animation-name: tossing;
-  -webkit-animation-name: tossing;
-  height: 100px;
-  margin-top: -135px;
-  margin-left: 350%;
-  -webkit-animation-duration: 1s;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction : alternate-reverse;
-  -webkit-animation-direction : alternate-reverse;
-  height: 200px;
-}
-
-.tossing3 {
-animation-name: tossing;
--webkit-animation-name: tossing;
-height: 100px;
-margin-top: 350px;
-margin-left: 360%;
--webkit-animation-duration: .3s;
-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-animation-direction : alternate-reverse;
--webkit-animation-direction : alternate-reverse;
-height: 100px;
-}
-div.form-contact {
-  padding: 0px 20px;
-}
-
-}
-
-
-
-  /*
-  SMALL SCREENS
-  */
-
-
-  @media screen and (min-width: 640px) and (max-width: 768px) {
-
-    div.container {
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  div.container {
       width: 100%;
-    }
- 
+  }
+
   nav.navbar-b {
     width: 100%;
-  
   }
+
   img.profile {
     margin-left: 3%;
   }
@@ -2664,1375 +1277,422 @@ div.form-contact {
   margin-top: 20px;
   text-align: center;
   }  
-  
-  .title-left {
-    font-size: 2rem;
-    margin-left: 30%;
-    position:relative;
+
+  .tossing {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: 0px;
+    margin-left: 60px;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 300px;
   }
-  .title-left2 {
-    font-size: 2rem;
-    margin-left: 35%;
-    position:relative;
+
+  .tossing2 {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: -135px;
+    margin-left: 350%;
+    -webkit-animation-duration: 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 200px;
   }
 
-  .back-to-top {
-    position: fixed;
-    display: none;
-    background: #0078ff;
-    color: #fff;
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    line-height: 1;
-    font-size: 16px;
-    border-radius: 50%;
-    right: 2%;
-    bottom: 15px;
-    transition: background 0.5s;
-    z-index: 11;
-  }      
-
-  div.slides {
-    display: grid;
-    overflow: hidden;
-    margin-right: -4%;
-    margin-left: -105%;
-    margin-bottom: -35%;
+  .tossing3 {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: 350px;
+    margin-left: 360%;
+    -webkit-animation-duration: .3s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 100px;
   }
-div.slides >  .slide {
-  grid-area: 1 / -10;
- margin-left: 510px;
- margin-top: 60px;
- margin-bottom: 140px;
-
-}
-div.slides > button {
-  appearance: none;
-  background: transparent;
-  border: none;
-  color: white;
-  position: relative;
-  margin-right: 90px;
-  font-size: 5rem;
-  width: 5rem;
-  height: 5rem;
-  top: 30%;
-  transition: opacity 0.3s;
-  opacity: 0.8;
-  z-index: 3;
-}
-.slides > button:hover {
-  opacity: 1;
-}
-.slides > button:focus {
-  outline: none;
-}
-.slides > button:first-child {
-  left: -325%;
-  top: 26%;
-}
-.slides > button:last-child {
-  right: 170%;
-  top: 25%;
+  div.form-contact {
+    padding: 0px 20px;
+  }
 }
 
-div.slideContent {
-width: 80vw;
-height: 55vw;
-background-size: cover;
-background-position: center center;
-background-repeat: no-repeat;
-transition: transform .7s ease-in-out;
-opacity: .5;
-
-display: grid;
-align-content: center;
-
-
-transform-style: preserve-3d;
-transform: perspective(1000px) translateX(calc(100% * var(--offset)))
-  rotateY(calc(-45deg * var(--dir)));
-}
-
-.slideContentInner {
-  transform-style: preserve-3d;
-  transform: translateZ(2rem);
-  transition: opacity 0.3s linear;
-  text-shadow: 0 0.1rem 1rem #000;
-  opacity: 0;
-}
-.slideContentInner .slideSubtitle, .slideContentInner .slideTitle {
-  font-size: 2rem;
-  font-weight: normal;
-  letter-spacing: 0.2ch;
-  text-transform: uppercase;
-  margin-top: -100px;
-  color: #f1dd9c;
-}
-
-.slideContentInner .slideDescription {
-  margin: 0;
-  font-size: 0.8rem;
-  letter-spacing: 0.2ch;
-}
-.slideBackground {
-  position: absolute;
-  top: 0;
-  left: 10%;
-  right: 10%;
-  bottom: 0;
-  background-size: cover;
-  background-position: center center;
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.8s linear, transform 0.3s ease-in-out;
-  pointer-events: none;
-  margin-left: 90px;
-  margin-right: -90px;
-  transform: translateX(calc(10% * var(--dir)));
-}
-.slide[data-active] {
-  z-index: 1;
-  pointer-events: auto;
-}
-.slide[data-active] .slideBackground {
-  opacity: 0;
-  transform: none;
-}
-.slide[data-active] .slideContentInner {
-  opacity: 1;
-}
-.slide[data-active] .slideContent {
-  --x: calc(var(--px) - .5);
-  --y: calc(var(--py) - .5);
-  opacity: 1;
-  transform: perspective(1000px);
-}
-.slide[data-active] .slideContent:hover {
-  transition: none;
-  transform: perspective(1000px) rotateY(calc(var(--x) * 45deg)) rotateX(calc(var(--y) * -45deg));
-}
-.tossing {
-animation-name: tossing;
--webkit-animation-name: tossing;
-height: 100px;
-margin-top: 0px;
-margin-left: 60px;
--webkit-animation-duration: 1.5s;
-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-animation-direction : alternate-reverse;
--webkit-animation-direction : alternate-reverse;
-height: 300px;
-
-}
-
-.tossing2 {
-  animation-name: tossing;
-  -webkit-animation-name: tossing;
-  height: 100px;
-  margin-top: -135px;
-  margin-left: 350%;
-  -webkit-animation-duration: 1s;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction : alternate-reverse;
-  -webkit-animation-direction : alternate-reverse;
-  height: 200px;
-}
-
-.tossing3 {
-animation-name: tossing;
--webkit-animation-name: tossing;
-height: 100px;
-margin-top: 350px;
-margin-left: 360%;
--webkit-animation-duration: .3s;
-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-animation-direction : alternate-reverse;
--webkit-animation-direction : alternate-reverse;
-height: 100px;
-}
-div.form-contact {
-  padding: 0px 20px;
-}
-
-}
-
-/*
-MEDIUM SCREENS
-*/
-
+/* MEDIUM SCREENS */
 
 @media screen and (min-width: 768px) and (max-width: 800px) {
-
   div.container {
     width: 100%;
   }
 
-nav.navbar-b {
-  width: 100%;
+  nav.navbar-b {
+    width: 100%;
+  }
 
-}
+  img.profile {
+    margin-left: 14%;
+  }
 
-img.profile {
-  margin-left: 14%;
-}
+  p.lead {
+    margin-left: 0%;
+  }
 
-p.lead {
-  margin-left: 0%;
+  .tossing {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: 0px;
+    margin-left: 60%;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 300px;
+  }
 
-}
+  .tossing2 {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: -40%;
+    margin-left: 500%;
+    -webkit-animation-duration: 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 200px;
+  }
 
-.title-left {
-  font-size: 2rem;
-  margin-left: 35%;
-  position:relative;
-}
-.title-left2 {
-  font-size: 2rem;
-  margin-left: 35%;
-  position:relative;
-}
-
-.back-to-top {
-  position: fixed;
-  display: none;
-  background: #0078ff;
-  color: #fff;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  line-height: 1;
-  font-size: 16px;
-  border-radius: 50%;
-  right: 2%;
-  bottom: 15px;
-  transition: background 0.5s;
-  z-index: 11;
-}      
-
-div.slides {
-  display: grid;
-  overflow: hidden;
-  margin-right: 3%;
-  margin-left: -105%;
-  margin-bottom: -35%;
-}
-div.slides >  .slide {
-grid-area: 1 / -10;
-margin-left: 765px;
-margin-top: 60px;
-margin-bottom: 140px;
-
-}
-div.slides > button {
-appearance: none;
-background: transparent;
-border: none;
-color: white;
-position: relative;
-margin-right: 97px;
-font-size: 5rem;
-width: 5rem;
-height: 5rem;
-top: 30%;
-transition: opacity 0.3s;
-opacity: 0.8;
-z-index: 3;
-}
-.slides > button:hover {
-opacity: 1;
-}
-.slides > button:focus {
-outline: none;
-}
-.slides > button:first-child {
-left: -325%;
-top: 26%;
-}
-.slides > button:last-child {
-right: 170%;
-top: 25%;
-}
-
-div.slideContent {
-width: 80vw;
-height: 55vw;
-background-size: cover;
-background-position: center center;
-background-repeat: no-repeat;
-transition: transform .7s ease-in-out;
-opacity: .5;
-
-display: grid;
-align-content: center;
-
-
-transform-style: preserve-3d;
-transform: perspective(1000px) translateX(calc(100% * var(--offset)))
-rotateY(calc(-45deg * var(--dir)));
-}
-
-.slideContentInner {
-transform-style: preserve-3d;
-transform: translateZ(2rem);
-transition: opacity 0.3s linear;
-text-shadow: 0 0.1rem 1rem #000;
-opacity: 0;
-}
-.slideContentInner .slideSubtitle, .slideContentInner .slideTitle {
-font-size: 2rem;
-font-weight: normal;
-letter-spacing: 0.2ch;
-text-transform: uppercase;
-margin-top: -100px;
-color: #f1dd9c;
-}
-
-.slideContentInner .slideDescription {
-margin: 0;
-font-size: 0.8rem;
-letter-spacing: 0.2ch;
-}
-.slideBackground {
-position: absolute;
-top: 0;
-left: 10%;
-right: 10%;
-bottom: 0;
-background-size: cover;
-background-position: center center;
-z-index: -1;
-opacity: 0;
-transition: opacity 0.8s linear, transform 0.3s ease-in-out;
-pointer-events: none;
-margin-left: 90px;
-margin-right: -90px;
-transform: translateX(calc(10% * var(--dir)));
-}
-.slide[data-active] {
-z-index: 1;
-pointer-events: auto;
-}
-.slide[data-active] .slideBackground {
-opacity: 0;
-transform: none;
-}
-.slide[data-active] .slideContentInner {
-opacity: 1;
-}
-.slide[data-active] .slideContent {
---x: calc(var(--px) - .5);
---y: calc(var(--py) - .5);
-opacity: 1;
-transform: perspective(1000px);
-}
-.slide[data-active] .slideContent:hover {
-transition: none;
-transform: perspective(1000px) rotateY(calc(var(--x) * 45deg)) rotateX(calc(var(--y) * -45deg));
-}
-.tossing {
-animation-name: tossing;
--webkit-animation-name: tossing;
-height: 100px;
-margin-top: 0px;
-margin-left: 60%;
--webkit-animation-duration: 1.5s;
-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-animation-direction : alternate-reverse;
--webkit-animation-direction : alternate-reverse;
-height: 300px;
-
-}
-
-.tossing2 {
-animation-name: tossing;
--webkit-animation-name: tossing;
-height: 100px;
-margin-top: -40%;
-margin-left: 500%;
--webkit-animation-duration: 1s;
-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-animation-direction : alternate-reverse;
--webkit-animation-direction : alternate-reverse;
-height: 200px;
-}
-
-.tossing3 {
-animation-name: tossing;
--webkit-animation-name: tossing;
-height: 100px;
-margin-top: 370px;
-margin-left: 860%;
--webkit-animation-duration: .3s;
-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-animation-direction : alternate-reverse;
--webkit-animation-direction : alternate-reverse;
-height: 100px;
-}
+  .tossing3 {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: 370px;
+    margin-left: 860%;
+    -webkit-animation-duration: .3s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 100px;
+  }
 
   div.form-contact {
     padding: 0px 20px;
   }
-
-
 }
 
-/*
-MEDIUM SCREENS
-*/
-
+/* MEDIUM SCREENS */
 
 @media screen and (min-width: 800px) and (max-width: 900px)  {
-
   div.container {
     width: 100%;
   }
 
-nav.navbar-b {
-  width: 100%;
+  nav.navbar-b {
+    width: 100%;
 
-}
-img.profile {
-  margin-left: 10%;
-}
+  }
+  img.profile {
+    margin-left: 10%;
+  }
 
-p.lead {
-  margin-left: -4%;
-  text-align: center;
-}
+  p.lead {
+    margin-left: -4%;
+    text-align: center;
+  }
 
-.title-left {
-  font-size: 2rem;
-  margin-left: 32%;
-  position:relative;
-}
-.title-left2 {
-  font-size: 2rem;
-  margin-left: 35%;
-  position:relative;
-}
+  .tossing {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: 0px;
+    margin-left: 60px;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 300px;
+  }
 
-.back-to-top {
-  position: fixed;
-  display: none;
-  background: #0078ff;
-  color: #fff;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  line-height: 1;
-  font-size: 16px;
-  border-radius: 50%;
-  right: 2%;
-  bottom: 15px;
-  transition: background 0.5s;
-  z-index: 11;
-}      
+  .tossing2 {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: -135px;
+    margin-left: 350%;
+    -webkit-animation-duration: 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 200px;
+  }
 
-div.slides {
-  display: grid;
-  overflow: hidden;
-  margin-right: 3%;
-  margin-left: -105%;
-  margin-bottom: -35%;
-}
-div.slides >  .slide {
-grid-area: 1 / -10;
-margin-left: 704px;
-margin-top: 60px;
-margin-bottom: 240px;
-
-}
-div.slides > button {
-appearance: none;
-background: transparent;
-border: none;
-color: white;
-position: relative;
-margin-right: 55px;
-font-size: 5rem;
-width: 10rem;
-height: 5rem;
-top: 30%;
-transition: opacity 0.3s;
-opacity: 0.8;
-z-index: 3;
-}
-.slides > button:hover {
-opacity: 1;
-}
-.slides > button:focus {
-outline: none;
-}
-.slides > button:first-child {
-left: -325%;
-top: 26%;
-}
-.slides > button:last-child {
-right: 170%;
-top: 25%;
-}
-
-div.slideContent {
-width: 80vw;
-height: 55vw;
-background-size: cover;
-background-position: center center;
-background-repeat: no-repeat;
-transition: transform .7s ease-in-out;
-opacity: .5;
-
-display: grid;
-align-content: center;
-
-
-transform-style: preserve-3d;
-transform: perspective(1000px) translateX(calc(100% * var(--offset)))
-rotateY(calc(-45deg * var(--dir)));
-}
-
-.slideContentInner {
-transform-style: preserve-3d;
-transform: translateZ(2rem);
-transition: opacity 0.3s linear;
-text-shadow: 0 0.1rem 1rem #000;
-opacity: 0;
-}
-.slideContentInner .slideSubtitle, .slideContentInner .slideTitle {
-font-size: 2rem;
-font-weight: normal;
-letter-spacing: 0.2ch;
-text-transform: uppercase;
-margin-top: -100px;
-color: #f1dd9c;
-}
-
-.slideContentInner .slideDescription {
-margin: 0;
-font-size: 0.8rem;
-letter-spacing: 0.2ch;
-}
-.slideBackground {
-position: absolute;
-top: 0;
-left: 10%;
-right: 10%;
-bottom: 0;
-background-size: cover;
-background-position: center center;
-z-index: -1;
-opacity: 0;
-transition: opacity 0.8s linear, transform 0.3s ease-in-out;
-pointer-events: none;
-margin-left: 90px;
-margin-right: -90px;
-transform: translateX(calc(10% * var(--dir)));
-}
-.slide[data-active] {
-z-index: 1;
-pointer-events: auto;
-}
-.slide[data-active] .slideBackground {
-opacity: 0;
-transform: none;
-}
-.slide[data-active] .slideContentInner {
-opacity: 1;
-}
-.slide[data-active] .slideContent {
---x: calc(var(--px) - .5);
---y: calc(var(--py) - .5);
-opacity: 1;
-transform: perspective(1000px);
-}
-.slide[data-active] .slideContent:hover {
-transition: none;
-transform: perspective(1000px) rotateY(calc(var(--x) * 45deg)) rotateX(calc(var(--y) * -45deg));
-}
-.tossing {
-animation-name: tossing;
--webkit-animation-name: tossing;
-height: 100px;
-margin-top: 0px;
-margin-left: 60px;
--webkit-animation-duration: 1.5s;
-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-animation-direction : alternate-reverse;
--webkit-animation-direction : alternate-reverse;
-height: 300px;
-
-}
-
-.tossing2 {
-animation-name: tossing;
--webkit-animation-name: tossing;
-height: 100px;
-margin-top: -135px;
-margin-left: 350%;
--webkit-animation-duration: 1s;
-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-animation-direction : alternate-reverse;
--webkit-animation-direction : alternate-reverse;
-height: 200px;
-}
-
-.tossing3 {
-animation-name: tossing;
--webkit-animation-name: tossing;
-height: 100px;
-margin-top: 350px;
-margin-left: 360%;
--webkit-animation-duration: .3s;
-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-animation-direction : alternate-reverse;
--webkit-animation-direction : alternate-reverse;
-height: 100px;
-}
+  .tossing3 {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: 350px;
+    margin-left: 360%;
+    -webkit-animation-duration: .3s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 100px;
+  }
 
   div.form-contact {
     padding: 0px 20px;
   }
-
-
 }
 
-/*
-MEDIUM SCREENS
-*/
-
+/* MEDIUM SCREENS */
 
 @media screen and (min-width: 900px) and (max-width: 1000px){
-
   div.container {
     width: 100%;
   }
 
-nav.navbar-b {
-  width: 100%;
+  nav.navbar-b {
+    width: 100%;
+  }
 
-}
+  img.profile {
+    margin-left: 12%;
+  }
 
-img.profile {
-  margin-left: 12%;
-}
+  p.lead {
+    margin-left: 0%;
+    text-align: center;
+  }
 
-p.lead {
-  margin-left: 0%;
-  text-align: center;
-}
+  .tossing {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: 0px;
+    margin-left: 60px;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 300px;
+  }
 
-.title-left {
-  font-size: 2rem;
-  margin-left: 35%;
-  position:relative;
-}
-.title-left2 {
-  font-size: 2rem;
-  margin-left: 35%;
-  position:relative;
-}
+  .tossing2 {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: -135px;
+    margin-left: 450%;
+    -webkit-animation-duration: 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 200px;
+  }
 
-.back-to-top {
-  position: fixed;
-  display: none;
-  background: #0078ff;
-  color: #fff;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  line-height: 1;
-  font-size: 16px;
-  border-radius: 50%;
-  right: 2%;
-  bottom: 15px;
-  transition: background 0.5s;
-  z-index: 11;
-}      
-
-div.slides {
-  display: grid;
-  overflow: hidden;
-  margin-right: -5%;
-  margin-left: -105%;
-  margin-bottom: -35%;
-}
-div.slides >  .slide {
-grid-area: 1 / -10;
-margin-left: 700px;
-margin-top: 60px;
-margin-bottom: 240px;
-
-}
-div.slides > button {
-appearance: none;
-background: transparent;
-border: none;
-color: white;
-position: relative;
-margin-right: 65px;
-font-size: 5rem;
-width: 5rem;
-height: 5rem;
-top: 30%;
-transition: opacity 0.3s;
-opacity: 0.8;
-z-index: 3;
-}
-.slides > button:hover {
-opacity: 1;
-}
-.slides > button:focus {
-outline: none;
-}
-.slides > button:first-child {
-left: -325%;
-top: 26%;
-}
-.slides > button:last-child {
-right: 170%;
-top: 25%;
-}
-
-div.slideContent {
-width: 80vw;
-height: 55vw;
-background-size: cover;
-background-position: center center;
-background-repeat: no-repeat;
-transition: transform .7s ease-in-out;
-opacity: .5;
-
-display: grid;
-align-content: center;
-
-
-transform-style: preserve-3d;
-transform: perspective(1000px) translateX(calc(100% * var(--offset)))
-rotateY(calc(-45deg * var(--dir)));
-}
-
-.slideContentInner {
-transform-style: preserve-3d;
-transform: translateZ(2rem);
-transition: opacity 0.3s linear;
-text-shadow: 0 0.1rem 1rem #000;
-opacity: 0;
-}
-.slideContentInner .slideSubtitle, .slideContentInner .slideTitle {
-font-size: 2rem;
-font-weight: normal;
-letter-spacing: 0.2ch;
-text-transform: uppercase;
-margin-top: -100px;
-color: #f1dd9c;
-}
-
-.slideContentInner .slideDescription {
-margin: 0;
-font-size: 0.8rem;
-letter-spacing: 0.2ch;
-}
-.slideBackground {
-position: absolute;
-top: 0;
-left: 10%;
-right: 10%;
-bottom: 0;
-background-size: cover;
-background-position: center center;
-z-index: -1;
-opacity: 0;
-transition: opacity 0.8s linear, transform 0.3s ease-in-out;
-pointer-events: none;
-margin-left: 90px;
-margin-right: -90px;
-transform: translateX(calc(10% * var(--dir)));
-}
-.slide[data-active] {
-z-index: 1;
-pointer-events: auto;
-}
-.slide[data-active] .slideBackground {
-opacity: 0;
-transform: none;
-}
-.slide[data-active] .slideContentInner {
-opacity: 1;
-}
-.slide[data-active] .slideContent {
---x: calc(var(--px) - .5);
---y: calc(var(--py) - .5);
-opacity: 1;
-transform: perspective(1000px);
-}
-.slide[data-active] .slideContent:hover {
-transition: none;
-transform: perspective(1000px) rotateY(calc(var(--x) * 45deg)) rotateX(calc(var(--y) * -45deg));
-}
-.tossing {
-animation-name: tossing;
--webkit-animation-name: tossing;
-height: 100px;
-margin-top: 0px;
-margin-left: 60px;
--webkit-animation-duration: 1.5s;
-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-animation-direction : alternate-reverse;
--webkit-animation-direction : alternate-reverse;
-height: 300px;
-
-}
-
-.tossing2 {
-animation-name: tossing;
--webkit-animation-name: tossing;
-height: 100px;
-margin-top: -135px;
-margin-left: 450%;
--webkit-animation-duration: 1s;
-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-animation-direction : alternate-reverse;
--webkit-animation-direction : alternate-reverse;
-height: 200px;
-}
-
-.tossing3 {
-animation-name: tossing;
--webkit-animation-name: tossing;
-height: 100px;
-margin-top: 350px;
-margin-left: 1060%;
--webkit-animation-duration: .3s;
-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-animation-direction : alternate-reverse;
--webkit-animation-direction : alternate-reverse;
-height: 100px;
-}
+  .tossing3 {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: 350px;
+    margin-left: 1060%;
+    -webkit-animation-duration: .3s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 100px;
+  }
 
   div.form-contact {
     padding: 0px 20px;
   }
-
-
 }
-/*
-MEDIUM SCREENS
-*/
 
+/* MEDIUM SCREENS */
 
 @media screen and (min-width: 1000px) and (max-width: 1100px) {
-
   div.container {
     width: 100%;
   }
 
-nav.navbar-b {
-  width: 100%;
+  nav.navbar-b {
+    width: 100%;
+  } 
 
-}
+  img.profile {
+    margin-left: 22%;
+  }
 
-img.profile {
-  margin-left: 22%;
-}
+  p.lead {
+    margin-left: 0%;
+    text-align: center;
+  }
 
-p.lead {
-  margin-left: 0%;
-  text-align: center;
-}
+  .tossing {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: 0px;
+    margin-left: 200px;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 300px;
+  }
 
+  .tossing2 {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: -135px;
+    margin-left: 650%;
+    -webkit-animation-duration: 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 200px;
+  }
 
-
-.title-left {
-  font-size: 2rem;
-  margin-left: 38%;
-  position:relative;
-}
-.title-left2 {
-  font-size: 2rem;
-  margin-left: 41%;
-  position:relative;
-}
-
-.back-to-top {
-  position: fixed;
-  display: none;
-  background: #0078ff;
-  color: #fff;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  line-height: 1;
-  font-size: 16px;
-  border-radius: 50%;
-  right: 2%;
-  bottom: 15px;
-  transition: background 0.5s;
-  z-index: 11;
-}      
-
-div.slides {
-  display: grid;
-  overflow: hidden;
-  margin-right: -5%;
-  margin-left: -105%;
-  margin-bottom: -35%;
-}
-div.slides >  .slide {
-grid-area: 1 / -10;
-margin-left: 1050px;
-margin-top: 60px;
-margin-bottom: 340px;
-
-}
-div.slides > button {
-appearance: none;
-background: transparent;
-border: none;
-color: white;
-position: relative;
-margin-right: 150px;
-font-size: 5rem;
-width: 5rem;
-height: 5rem;
-top: 30%;
-transition: opacity 0.3s;
-opacity: 0.8;
-z-index: 3;
-}
-.slides > button:hover {
-opacity: 1;
-}
-.slides > button:focus {
-outline: none;
-}
-.slides > button:first-child {
-left: -325%;
-top: 26%;
-}
-.slides > button:last-child {
-right: 170%;
-top: 25%;
-}
-
-div.slideContent {
-width: 80vw;
-height: 55vw;
-background-size: cover;
-background-position: center center;
-background-repeat: no-repeat;
-transition: transform .7s ease-in-out;
-opacity: .5;
-
-display: grid;
-align-content: center;
-
-
-transform-style: preserve-3d;
-transform: perspective(1000px) translateX(calc(100% * var(--offset)))
-rotateY(calc(-45deg * var(--dir)));
-}
-
-.slideContentInner {
-transform-style: preserve-3d;
-transform: translateZ(2rem);
-transition: opacity 0.3s linear;
-text-shadow: 0 0.1rem 1rem #000;
-opacity: 0;
-}
-.slideContentInner .slideSubtitle, .slideContentInner .slideTitle {
-font-size: 2rem;
-font-weight: normal;
-letter-spacing: 0.2ch;
-text-transform: uppercase;
-margin-top: -100px;
-color: #f1dd9c;
-}
-
-.slideContentInner .slideDescription {
-margin: 0;
-font-size: 0.8rem;
-letter-spacing: 0.2ch;
-}
-.slideBackground {
-position: absolute;
-top: 0;
-left: 10%;
-right: 10%;
-bottom: 0;
-background-size: cover;
-background-position: center center;
-z-index: -1;
-opacity: 0;
-transition: opacity 0.8s linear, transform 0.3s ease-in-out;
-pointer-events: none;
-margin-left: 90px;
-margin-right: -90px;
-transform: translateX(calc(10% * var(--dir)));
-}
-.slide[data-active] {
-z-index: 1;
-pointer-events: auto;
-}
-.slide[data-active] .slideBackground {
-opacity: 0;
-transform: none;
-}
-.slide[data-active] .slideContentInner {
-opacity: 1;
-}
-.slide[data-active] .slideContent {
---x: calc(var(--px) - .5);
---y: calc(var(--py) - .5);
-opacity: 1;
-transform: perspective(1000px);
-}
-.slide[data-active] .slideContent:hover {
-transition: none;
-transform: perspective(1000px) rotateY(calc(var(--x) * 45deg)) rotateX(calc(var(--y) * -45deg));
-}
-.tossing {
-animation-name: tossing;
--webkit-animation-name: tossing;
-height: 100px;
-margin-top: 0px;
-margin-left: 200px;
--webkit-animation-duration: 1.5s;
-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-animation-direction : alternate-reverse;
--webkit-animation-direction : alternate-reverse;
-height: 300px;
-
-}
-
-.tossing2 {
-animation-name: tossing;
--webkit-animation-name: tossing;
-height: 100px;
-margin-top: -135px;
-margin-left: 650%;
--webkit-animation-duration: 1s;
-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-animation-direction : alternate-reverse;
--webkit-animation-direction : alternate-reverse;
-height: 200px;
-}
-
-.tossing3 {
-animation-name: tossing;
--webkit-animation-name: tossing;
-height: 100px;
-margin-top: 350px;
-margin-left: 1160%;
--webkit-animation-duration: .3s;
-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-animation-direction : alternate-reverse;
--webkit-animation-direction : alternate-reverse;
-height: 100px;
-}
+  .tossing3 {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: 350px;
+    margin-left: 1160%;
+    -webkit-animation-duration: .3s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 100px;
+  }
 
   div.form-contact {
     padding: 0px 20px;
   }
-
-
 }
-/*
-MEDIUM SCREENS
-*/
+/* MEDIUM SCREENS */
 
-div.container-intro {
-  text-align: center;
-
-  justify-content: center;
-  z-index: 1;
-  position:absolute;
-}
-
-@media screen and (min-width: 1100px) and (max-width: 1260px) {
-
+@media screen and (min-width: 1100px) and (max-width: 1260px) { 
   div.container {
     width: 100%;
   }
 
-nav.navbar-b {
-  width: 100%;
-}
+  nav.navbar-b {
+    width: 100%;
+  }
 
-img.profile {
-  margin-left: 22%;
-}
+  img.profile {
+    margin-left: 22%;
+  }
 
-p.lead {
-  margin-left: 0%;
-  text-align: center;
-}
+  p.lead {
+    margin-left: 0%;
+    text-align: center;
+  }
 
+  .tossing {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: 0px;
+    margin-left: 200px;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 300px;
+  }
 
+  .tossing2 {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: -135px;
+    margin-left: 650%;
+    -webkit-animation-duration: 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 200px;
+  }
 
-.title-left {
-  font-size: 2rem;
-  margin-left: 38%;
-  position:relative;
-}
-.title-left2 {
-  font-size: 2rem;
-  margin-left: 41%;
-  position:relative;
-}
-
-.back-to-top {
-  position: fixed;
-  display: none;
-  background: #0078ff;
-  color: #fff;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  line-height: 1;
-  font-size: 16px;
-  border-radius: 50%;
-  right: 2%;
-  bottom: 15px;
-  transition: background 0.5s;
-  z-index: 11;
-}      
-
-div.slides {
-  display: grid;
-  overflow: hidden;
-  margin-right: -5%;
-  margin-left: -105%;
-  margin-bottom: -35%;
-}
-div.slides >  .slide {
-grid-area: 1 / -10;
-margin-left: 980px;
-margin-top: 60px;
-margin-bottom: 340px;
-
-}
-div.slides > button {
-appearance: none;
-background: transparent;
-border: none;
-color: white;
-position: relative;
-margin-right: 110px;
-font-size: 5rem;
-width: 10rem;
-height: 5rem;
-top: 30%;
-transition: opacity 0.3s;
-opacity: 0.8;
-z-index: 3;
-}
-.slides > button:hover {
-opacity: 1;
-}
-.slides > button:focus {
-outline: none;
-}
-.slides > button:first-child {
-left: -325%;
-top: 26%;
-}
-.slides > button:last-child {
-right: 170%;
-top: 25%;
-}
-
-div.slideContent {
-width: 80vw;
-height: 55vw;
-background-size: cover;
-background-position: center center;
-background-repeat: no-repeat;
-transition: transform .7s ease-in-out;
-opacity: .5;
-
-display: grid;
-align-content: center;
-
-
-transform-style: preserve-3d;
-transform: perspective(1000px) translateX(calc(100% * var(--offset)))
-rotateY(calc(-45deg * var(--dir)));
-}
-
-.slideContentInner {
-transform-style: preserve-3d;
-transform: translateZ(2rem);
-transition: opacity 0.3s linear;
-text-shadow: 0 0.1rem 1rem #000;
-opacity: 0;
-}
-.slideContentInner .slideSubtitle, .slideContentInner .slideTitle {
-font-size: 2rem;
-font-weight: normal;
-letter-spacing: 0.2ch;
-text-transform: uppercase;
-margin-top: -100px;
-color: #f1dd9c;
-}
-
-.slideContentInner .slideDescription {
-margin: 0;
-font-size: 0.8rem;
-letter-spacing: 0.2ch;
-}
-.slideBackground {
-position: absolute;
-top: 0;
-left: 10%;
-right: 10%;
-bottom: 0;
-background-size: cover;
-background-position: center center;
-z-index: -1;
-opacity: 0;
-transition: opacity 0.8s linear, transform 0.3s ease-in-out;
-pointer-events: none;
-margin-left: 90px;
-margin-right: -90px;
-transform: translateX(calc(10% * var(--dir)));
-}
-.slide[data-active] {
-z-index: 1;
-pointer-events: auto;
-}
-.slide[data-active] .slideBackground {
-opacity: 0;
-transform: none;
-}
-.slide[data-active] .slideContentInner {
-opacity: 1;
-}
-.slide[data-active] .slideContent {
---x: calc(var(--px) - .5);
---y: calc(var(--py) - .5);
-opacity: 1;
-transform: perspective(1000px);
-}
-.slide[data-active] .slideContent:hover {
-transition: none;
-transform: perspective(1000px) rotateY(calc(var(--x) * 45deg)) rotateX(calc(var(--y) * -45deg));
-}
-.tossing {
-animation-name: tossing;
--webkit-animation-name: tossing;
-height: 100px;
-margin-top: 0px;
-margin-left: 200px;
--webkit-animation-duration: 1.5s;
-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-animation-direction : alternate-reverse;
--webkit-animation-direction : alternate-reverse;
-height: 300px;
-
-}
-
-.tossing2 {
-animation-name: tossing;
--webkit-animation-name: tossing;
-height: 100px;
-margin-top: -135px;
-margin-left: 650%;
--webkit-animation-duration: 1s;
-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-animation-direction : alternate-reverse;
--webkit-animation-direction : alternate-reverse;
-height: 200px;
-}
-
-.tossing3 {
-animation-name: tossing;
--webkit-animation-name: tossing;
-height: 100px;
-margin-top: 350px;
-margin-left: 1160%;
--webkit-animation-duration: .3s;
-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-animation-direction : alternate-reverse;
--webkit-animation-direction : alternate-reverse;
-height: 100px;
-}
+  .tossing3 {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    height: 100px;
+    margin-top: 350px;
+    margin-left: 1160%;
+    -webkit-animation-duration: .3s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction : alternate-reverse;
+    -webkit-animation-direction : alternate-reverse;
+    height: 100px;
+  }
 
   div.form-contact {
     padding: 0px 20px;
   }
-
-
 }
 
-
-
-.carousel {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  margin-top: 10%;
-  max-width: 1100px;
-  max-height: 550px;   
-  min-height: 400px;
-  overflow: hidden;
-position: relative;
-
-}
+/* CAROUSEL */
 
 .carousel-item {
-visibility:visible;
+  visibility:visible;
   display: flex;
   width: 100%;
   height: 100%;
   align-items: center;
   justify-content: flex-end;
-    -webkit-align-items: center;
+  -webkit-align-items: center;
   -webkit-justify-content: flex-end;
   position: relative;
   background-color: #fff;
   flex-shrink: 0;
- -webkit-flex-shrink: 0;
+  -webkit-flex-shrink: 0;
   position: absolute;
   z-index: 0;
-transition: 0.6s all linear;
-
+  transition: 0.6s all linear;
 }
 
 .carousel-item__info {
@@ -4042,20 +1702,15 @@ transition: 0.6s all linear;
   text-align: center;
   align-items: center;
   flex-direction: column;
-  
-    display: -webkit-flex;
+  display: -webkit-flex;
   -webkit-justify-content: center;
   -webkit-flex-direction: column;
-  
   order: 1;
   left: 0;
   margin: auto;
   padding: 0 40px;
   width: 40%;
-
 }
-
-
 
 .carousel-item__image {
   width: 60%;
@@ -4063,17 +1718,15 @@ transition: 0.6s all linear;
   order: 2;
   align-self: flex-end;
   flex-basis: 60%;
-
-    -webkit-order: 2;
+  -webkit-order: 2;
   -webkit-align-self: flex-end;
   -webkit-flex-basis: 60%;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- position:relative;
-transform: translateX(100%);
-transition: 0.6s all ease-in-out;
+  position:relative;
+  transform: translateX(100%);
+  transition: 0.6s all ease-in-out;
 }
 
 .carousel-item__subtitle {
@@ -4092,8 +1745,7 @@ transition: 0.6s all ease-in-out;
 
 .carousel-item__title {
   margin: 15px 0 0 0;
-  font-family: 'Playfair Display', 
-  serif;
+  font-family: 'Playfair Display', serif;
   font-size: 44px;
   line-height: 45px;
   letter-spacing: 3px;
@@ -4126,8 +1778,6 @@ transition: 0.6s all ease-in-out;
   background-position-x: center;
 }
 
-
-
 .carousel-item--2 {
   background: 
     linear-gradient(to bottom, rgba(37, 37, 37, 0.52), rgba(126, 126, 126, 0.73)),
@@ -4145,15 +1795,13 @@ transition: 0.6s all ease-in-out;
 }
 
 .carousel-item__container{
-width: 170%;
-
+  width: 170%;
 }
 
-
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .carousel-item__container{
     width: 500%;
-    }    
+  }  
 }
 
 .carousel-item__btn {
@@ -4167,33 +1815,23 @@ width: 170%;
   font-weight: 1100;
 }
 
-.fa{
-  color: #000;
-}
-
-.fa:hover {
-  color: rgb(163, 223, 94);
-  transition: all 0.5s ease-in-out;
-}
-
 .carousel-item__btn2 {
   float: left;
 }
-
 
 .carousel__nav {
   position: absolute;
   right: 0;
   z-index: 2;
   background-color: #fff;
-bottom: 0;
+  bottom: 0;
 }
 
 .carousel__icon {
   display: inline-block;
   vertical-align: middle;
   width: 16px;
-fill: #5d5d5d;
+  fill: #5d5d5d;
 }
 
 .carousel__arrow {
@@ -4214,22 +1852,30 @@ fill: #5d5d5d;
   margin-top: -7px;
 }
 
-.active{
- z-index: 1;
-display: flex;
-visibility:visible;
+.active {
+  z-index: 1;
+  display: flex;
+  visibility:visible;
 }
 
 .active .carousel-item__subtitle, .active .carousel-item__title, .active .carousel-item__description,.active .carousel-item__btn{
   transform: translateY(0);
   opacity: 1;
-transition: 0.6s all ease-in-out;
+  transition: 0.6s all ease-in-out;
   visibility: visible;
 }
 
-
-
-.active .carousel-item__image{ 
-transition: 0.6s all ease-in-out;
-transform: translateX(0);
+.active .carousel-item__image { 
+  transition: 0.6s all ease-in-out;
+  transform: translateX(0);
 }
+
+/* FA */
+.fa {
+  color: #000;
+}
+
+.fa:hover {
+  color: rgb(163, 223, 94);
+  transition: all 0.5s ease-in-out;
+} 

@@ -10,19 +10,16 @@ class Contact extends React.Component {
    
        <section id="contact">
         <div className="container ">
+        <h2 className="title-align">Let's chat!</h2>
           <div className="row">
             <div className="col-12">
               <div className="contact-mf">
                   <div className="row">
                     <div className="form-contact">
                       <div className="title-box-1  ml-lg-4">
-                        <h5 className="title-left2 ">Let's chat!</h5>
                         
                       </div>
-
-
                       <div>
-                     
                         <div class="round" >
                           <div class="floating">
                             <img class="tossing" src={logo}/>
@@ -121,12 +118,6 @@ class Contact extends React.Component {
                     </div>
                     
                     <div className="col-md-6 title-box-2 pt-md-0">
-                 
-                 {/* <!-- <ul class="list-ico">
-                         <li><span class="ion-ios-location"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
-                         <li><span class="ion-ios-telephone"></span> (617) 557-0089</li>
-                         <li><span class="ion-email"></span> contact@example.com</li>
-                         </ul> --> */}
                
                <div className="socials d-none d-xl-block">
                  <ul>
