@@ -2,7 +2,6 @@ import React from "react";
 import logo1 from "../img/cactus logo.png";
 import logo2 from "../img/profile pic";
 
-
 class About extends React.Component {
   constructor() {
     super();
@@ -46,7 +45,6 @@ class About extends React.Component {
         {
           id: "first-p-about",
           content:
-  
             "Hey! I’m Joseph, I was born and raised in Oklahoma, where I enjoy making music and skateboarding. If you like my site, don’t hesitate to reach out!"
         },
       ]
@@ -57,24 +55,24 @@ class About extends React.Component {
     return (
       <section id="about" className="about-mf sect-pt4 ">
         <div className="container">
-        <h2 className="title-align">About me</h2>
+          <h2 className="title-align">About me</h2>
           <div className="row">
             <div className="col-sm-12">
-              <div className="title-box-3">
-                  
+              <div className="title-box-3">    
               </div>
-            <div className="row">
-              <div className="col-xl-6 px-0 ">
-                <div className="about-me pt-4 pt-md-0 px-0 col-xl-12 col-12">
-                  <img src={logo2} alt="Profile Pic" className="profile" />
+              <div className="row">
+                <div className="col-xl-6 px-0 ">
+                  <div className="about-me pt-4 pt-md-0 px-0 col-xl-12 col-12">
+                    <img src={logo2} alt="Profile Pic" className="profile" />
                       {this.state.about_me.map(content => {
-                return (
-                  <p className="lead col-12" key={content.id}>
-                    {content.content}
-                  </p>
+                    return (
+                    <p className="lead col-12" key={content.id}>
+                      {content.content}
+                    </p>
                      );
-                      })}
-                </div>
+                    }
+                  )}
+                  </div>
                </div>
               <div className="col-xl-6">
                 <div className="row">
@@ -94,38 +92,35 @@ class About extends React.Component {
                   </div>
                 </div>
                 <div className="skill-mf">
-                  
-                      {this.state.skills.map(skill => {
-                        return (
-                          <React.Fragment key={skill.id}>
-                            <span>{skill.content}</span>{" "}
-                            <span className="pull-right">
-                              {skill.porcentage}
-                            </span>
-                            <div className="progress">
-                              <div
-                                className="progress-bar"
-                                role="progressbar"
-                                style={{ width: skill.porcentage }}
-                                aria-valuenow={skill.value}
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                              ></div>
-                            </div>
-                          </React.Fragment>
-                        );
-                      })}
-                    </div>
-                  </div>
-  
+                  {this.state.skills.map(skill => {
+                    return (
+                      <React.Fragment key={skill.id}>
+                        <span>{skill.content}</span>{" "}
+                        <span className="pull-right">
+                          {skill.porcentage}
+                        </span>
+                        <div className="progress">
+                          <div
+                            className="progress-bar"
+                            role="progressbar"
+                            style={{ width: skill.porcentage }}
+                            aria-valuenow={skill.value}
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                          </div>
+                        </div>
+                      </React.Fragment>
+                    );
+                  })}
                 </div>
-      
+              </div>
             </div>
           </div>
         </div>
-      </section>
-    );
-  }
+      </div>
+    </section>
+  );}
 }
 
 export default About;

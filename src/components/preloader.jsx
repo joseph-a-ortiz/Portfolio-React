@@ -10,12 +10,12 @@ class Preloader extends React.Component {
               });
             }
           });
-    }
+        }
 
     render(){
         return <div id="preloader"></div>;
     }
-}
+  }
 
 export default Preloader;
 

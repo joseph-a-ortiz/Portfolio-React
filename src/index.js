@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import $, { htmlPrefilter } from 'jquery';
-import logo from "./img/9010B281-BF35-401F-AD31-B459D7221AB6.jpeg";
-import mosquito from "./img/Mosquito.png";
-
 //import css in order
 import 'normalize.css';
 import './animate.css';
@@ -20,8 +17,6 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import './libs/easing.js';
 import 'lightbox2/dist/js/lightbox.min.js';
 
-import * as serviceWorker from './serviceWorker';
-
 //import components
 import Navbar from './components/navbar.jsx';
 import Intro from './components/intro.jsx';
@@ -35,7 +30,6 @@ import Preloader from './components/preloader';
 
 ReactDOM.render(
     <React.Fragment>
-    
         <Intro />
         <Navbar />
         <About />

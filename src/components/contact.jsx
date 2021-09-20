@@ -6,18 +6,15 @@ import "../index";
 class Contact extends React.Component {
   render() {
     return (
-
-   
        <section id="contact">
-        <div className="container ">
-        <h2 className="title-align">Let's chat!</h2>
-          <div className="row">
-            <div className="col-12">
-              <div className="contact-mf">
+          <div className="container ">
+            <h2 className="title-align">Let's chat!</h2>
+            <div className="row">
+              <div className="col-12">
+                <div className="contact-mf">
                   <div className="row">
                     <div className="form-contact">
                       <div className="title-box-1  ml-lg-4">
-                        
                       </div>
                       <div>
                         <div class="round" >
@@ -114,68 +111,52 @@ class Contact extends React.Component {
                       </div>
                     </div>
                     <div className="col-md-6">
-       
                     </div>
-                    
                     <div className="col-md-6 title-box-2 pt-md-0">
-               
-               <div className="socials d-none d-xl-block">
-                 <ul>
-                   <li>
-                     <a
-                       href="https://codepen.io/joseph-a-ortiz"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                     >
-                       <span className="ico-circle ">
-                         <i className="ion-social-codepen"></i>
-                       </span>
-                     </a>
-                   </li>
-                   <li>
-                     <a
-                       href="https://github.com/joseph-a-ortiz"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                     >
-                       <span className="ico-circle">
-                         <i className="ion-social-github"></i>
-                       </span>
-                     </a>
-                   </li>
-                   <li>
-                     <a
-                       href="https://www.linkedin.com/in/joseph-ortiz-76385089/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                     >
-                       <span className="ico-circle">
-                         <i className="ion-social-linkedin"></i>
-                       </span>
-                     </a>
-                   </li>
-                 </ul>
-               </div>
-               </div>
-               </div>
-            
-          </div>
-              
+                      <div className="socials d-none d-xl-block">
+                        <ul>
+                          <li>
+                            <a
+                              href="https://codepen.io/joseph-a-ortiz"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <span className="ico-circle ">
+                                <i className="ion-social-codepen"></i>
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://github.com/joseph-a-ortiz"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <span className="ico-circle">
+                                <i className="ion-social-github"></i>
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.linkedin.com/in/joseph-ortiz-76385089/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <span className="ico-circle">
+                                <i className="ion-social-linkedin"></i>
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-   
-        <footer>
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-12">
-                <div className="copyright-box">
-                </div>
               </div>
             </div>
           </div>
-        </footer>
-        </section>
+        </div>
+      </section>
     );
   }
 }

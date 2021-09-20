@@ -1,45 +1,9 @@
-
-.title-box-2 {
-  margin-left: 480px;
-}
-
-.title-box-1 {
- margin-right: 50px;
-}
-
-.form-contact {
-  padding: 0px 200px;
-}
-
-
-
-.title-box-3 {
-margin-left: 50px;
-}
-
-.line-mf {
-  background-color: green;
-}
-
 /*Rolling Ball */
 
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
 *,*:before,*:after { box-sizing: border-box; }
 
-.sun {
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  position: absolute;
-  right: 30px;
-  top: 30px;
-  box-shadow: 0 0 80px #ffc000;
-  background: linear-gradient(#ffc000 0%, #fff119 50%, #ffcc00 100%);
-  opacity: 0.9;
-  z-index: 1;
-  position: absolute;
-}
 .sand {
   z-index: 1;
   position: absolute;
@@ -53,57 +17,20 @@ margin-left: 50px;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8be5b', endColorstr='#f4b44b',GradientType=0 );
 }
 
-
-
 // BB-8
 $d: 140px;
 .bb8 {
   position: absolute;
   margin-left: -$d/2;
   width: $d;
-
   bottom: 10%;
   left: 0;
   right: 0;
-  
 }
 
 .ball {
   background-image: url(/img/tumbleweed.png);
   height: 80px;
-
-}
-
-
-.shadow {
-  background: #3A271C;
-  border-radius: 50%;
-  height: $d/6;
-  opacity: .7;
-  position: absolute;
-  width: $d;
-  z-index: -1;
-  
-  left: 5px;
-  bottom: -8px;
-}
-.shameless {
-  position: absolute;
-  
-  bottom: 10px;
-  right: 10px;
-}
-a {
-  color: #333;
-  font-family: 'Raleway', sans-serif;
-  text-decoration: none;
-}
-a:visited {
-  color: #333;
-}
-a:hover,
-a:focus {
-  color: white;
 }
 
 $red: #70c520;
@@ -124,36 +51,12 @@ $white: #fff;
   text-transform: uppercase;
   width: 100%; 
   
-//   @media(min-width: 400px) {
-//     display: inline-block;
-//     margin-right: 2.5em;
-  
-//     &:nth-of-type(even) {
-//       margin-right: 0;
-//     }
-//   }
-  
   @media(min-width: 200px) {
-      
     margin: 3em 1em 2em;
-  
-//     &:nth-of-type(even) {
-//       margin-right: 2.5em;
-//     }
-    
-//     &:nth-of-type(5) {
-//       margin-right: 0;
-//     }
-    
   }
-  
   &:hover { text-decoration: none; }
-  
 }
 
-/////////////////////////////////
-//button one
-///////////////////////////////
 .btn-1 {
   background: darken($red, 1.5%);
   font-weight: 900;

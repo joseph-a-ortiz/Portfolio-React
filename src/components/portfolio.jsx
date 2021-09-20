@@ -1,15 +1,9 @@
-
 import React from "react";
 import "../style.css"
-import logo from "../img/earth.jpg";
-
-
 
 class Portfolio extends React.Component {
   render() {
     return (
-
-
 <section id="portfolio">    
   <h2 className="title-align">Projects</h2>
   <div class="carousel container">

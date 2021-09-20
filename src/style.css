@@ -56,6 +56,19 @@ a:hover {
   transition: all 0.5s ease-in-out;
 }
 
+a {
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+}
+a:visited {
+  color: #333;
+}
+a:hover,
+a:focus {
+  color: white;
+}
+
 /*Intro*/
 
 .bg-image {
@@ -104,6 +117,18 @@ a:hover {
   bottom: -12px;
   z-index: 1;
 }
+
+.title-box-1 {
+  margin-right: 50px;
+ }
+
+ .title-box-2 {
+  margin-left: 480px;
+}
+
+.title-box-3 {
+  margin-left: 50px;
+  }
 
 /* SOCIALS */
 
@@ -589,6 +614,10 @@ div.container-intro {
 
 .contact-mf {
   margin-top: 4rem;
+}
+
+.form-contact {
+  padding: 0px 200px;
 }
 
 #sendmessage {

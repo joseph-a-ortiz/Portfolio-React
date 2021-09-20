@@ -1,6 +1,5 @@
 import React from "react";
 import $ from "jquery";
-
 import logo1 from "../img/cactus logo.png";
 import logo2 from "../img/cactus logo2.png";
 
