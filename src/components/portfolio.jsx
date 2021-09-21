@@ -41,9 +41,18 @@ class Portfolio extends React.Component {
       <div class="carousel-item carousel-item--3">
         <div class="carousel-item__info">
           <div class="carousel-item__container">
-            <h2 class="carousel-item__subtitle">React Native</h2><br/>
-            <h1 class="carousel-item__title"> Info App </h1>
+            <h2 class="carousel-item__subtitle">React Native Project</h2><br/>
+            <h1 class="carousel-item__title"> Info Mobile App </h1>
             <a href="https://github.com/joseph-a-ortiz/Dead-Mosquito-App" class="carousel-item__btn"> <br/>&#160;&#160;<i class="fa fa-github fa-4x"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item carousel-item--4">
+        <div class="carousel-item__info">
+          <div class="carousel-item__container">
+            <h2 class="carousel-item__subtitle">React Project</h2><br/>
+            <h1 class="carousel-item__title"> Portfolio Website</h1>
+            <a href="https://github.com/joseph-a-ortiz/Portfolio-React" class="carousel-item__btn"> <br/>&#160;&#160;<i class="fa fa-github fa-4x"></i></a>
           </div>
         </div>
       </div>
