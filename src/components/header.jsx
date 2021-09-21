@@ -10,9 +10,10 @@ class Intro1 extends React.Component {
     return (
       <div id="home" className="intro bg-image ">
         <div className="intro-content display-table">
+          
+          <div className="container table-cell">
           <div class="sand">
           </div>
-          <div className="container table-cell">
             <div className="container-intro">
               <h1 className="intro-title mb-4">Howdy, I am Joseph Ortiz</h1>
               <p className="intro-subtitle">
