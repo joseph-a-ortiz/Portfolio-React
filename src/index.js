@@ -47,13 +47,13 @@ document.getElementById('root'));
       /*Rolling Ball*/
 
       var $w = $( window ).width();
-var $dW = $('.bb8').css('width');
+var $dW = $('.tumbleweed').css('width');
 
 $dW = parseInt($dW);
 var $dPos = 0;
 var $dSpeed = 1;
 var $dMinSpeed = 1;
-var $dMaxSpeed = 4;
+var $dMaxSpeed = 2;
 var $dAccel = 1.04;
 var $dRot = 0;
 var $mPos = $w - $w/5;
@@ -102,7 +102,7 @@ function moveDroid(){
     $dPos = $dPos - $dSpeed;
     $dRot = $dRot - $dSpeed;
   } else { }
-  $('.bb8').css('left', $dPos);
+  $('.tumbleweed').css('left', $dPos);
   $('.ball').css({ WebkitTransform: 'rotate(' + $dRot + 'deg)'});
   $('.ball').css({ '-moz-transform': 'rotate(' + $dRot + 'deg)'});
 }

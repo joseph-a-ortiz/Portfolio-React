@@ -15,7 +15,7 @@ class Intro1 extends React.Component {
           <div class="sand">
           </div>
             <div className="container-intro">
-              <h1 className="intro-title mb-4">Howdy, I am Joseph Ortiza</h1>
+              <h1 className="intro-title mb-4">Howdy, I am Joseph Ortiz</h1>
               <p className="intro-subtitle">
                 <span className="text-slider-items"></span>
                 <strong className="text-slider">
@@ -34,7 +34,7 @@ class Intro1 extends React.Component {
               </p>
             </div>
             <p className="pt-3">
-          <div class="bb8 container-intro">
+          <div class="tumbleweed container-intro">
             <div class="ball ">
             <img class="ball" src={logo}/>
             </div>
