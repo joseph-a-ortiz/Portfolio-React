@@ -9,7 +9,7 @@
   position: absolute;
   bottom: 0px;
   width: 100%;
-  height: 10%;
+  height: 150px;
   background: #fbeec1;
   background: linear-gradient(to bottom, #f3b851 0%, #f1dd9c 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8be5b', endColorstr='#f4b44b',GradientType=0 );
@@ -21,7 +21,7 @@ $d: 140px;
   position: relative;
   margin-left: -$d/2;
   width: $d;
-  bottom: 10%;
+  bottom: 150px;
   left: 0;
   right: 0;
 }
