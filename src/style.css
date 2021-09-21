@@ -775,10 +775,6 @@ div.container-intro {
 }
 
 @media (min-width: 767px) {
-  .about-mf {
-    margin-top: 3rem;
-    padding-left: 0rem;
-  }
 
   .contact-mf {
     margin-top: 3rem;
