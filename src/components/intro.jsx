@@ -51,7 +51,7 @@ class Intro extends React.Component {
                 },
                 onHover: {
                   enable: true,
-                  mode: [ "repulse"],
+                  mode: ["bubble", "repulse"],
                 },
                 resize: true,
               },
